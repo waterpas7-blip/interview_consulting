@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ko" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첨단고3 이찬우 학생 - [버전 2: 지엽·기습 방어 편] 전남대 인공지능학부 면접 책자</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Pretendard -->
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .slide-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .slide-card:hover { transform: translateY(-4px); box-shadow: 0 12px 25px -5px rgb(0 0 0 / 0.25); }
+        .highlight-keyword {
+            background: linear-gradient(120deg, rgba(245, 158, 11, 0.28) 0%, rgba(234, 88, 12, 0.28) 100%);
+            border-bottom: 2px solid #fbbf24;
+            padding: 0.12em 0.35em;
+            border-radius: 0.3rem;
+            font-weight: 700;
+            color: #fef3c7;
+        }
+        .widescreen-slide {
+            min-height: 76vh;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal {
+            animation: fadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-full flex flex-col antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Header / Navbar -->
+    <header class="bg-slate-950/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="bg-amber-600 p-3 rounded-2xl text-white shadow-lg shadow-amber-600/30">
+                    <i class="fa-solid fa-shield-halved text-2xl"></i>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-amber-400/20 text-amber-300 text-xs font-bold px-2.5 py-0.5 rounded-full border border-amber-400/30">전남대학교 인공지능학부 면접 대비</span>
+                        <span class="text-xs text-slate-400">첨단고 3학년 이찬우 학생</span>
+                    </div>
+                    <h1 class="text-xl font-extrabold text-white tracking-tight mt-0.5">[버전 2: 지엽·기습 방어 편] 전남대학교 인공지능학부 수시 면접 책자</h1>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+                <button onclick="openModule(0)" class="flex items-center space-x-2 bg-amber-600 hover:bg-amber-500 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-amber-600/30 transition-all">
+                    <i class="fa-solid fa-play"></i>
+                    <span>와이드 방어 훈련 시작</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <!-- 3 Defense Principles Banner -->
+        <div class="bg-gradient-to-r from-amber-950/80 via-slate-900 to-slate-900 border border-amber-700/50 rounded-3xl p-6 md:p-8 mb-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl text-amber-500 pointer-events-none">
+                <i class="fa-solid fa-shield-cat"></i>
+            </div>
+            <div class="max-w-5xl">
+                <div class="inline-flex items-center space-x-2 bg-amber-500/30 border border-amber-400/30 px-3 py-1 rounded-full text-amber-200 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-shield-halved text-amber-300"></i>
+                    <span>🚨 [지엽·기습 면접 대응 3대 방어 원칙] 과락(F) 방어 및 성장형 서사 전환</span>
+                </div>
+                <h2 class="text-xl md:text-2xl font-black text-white tracking-tight">사각지대 압박 질문을 A+ 최고 등급으로 바꾸는 철통 방어 프레임</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 text-xs md:text-sm text-slate-300">
+                    <div class="bg-amber-950/40 border border-amber-800/50 p-4 rounded-2xl">
+                        <strong class="text-amber-300 text-base block mb-1.5">1. 탐구 범위와 한계의 솔직한 인정</strong>
+                        <p class="leading-relaxed">고교 수준을 벗어난 전문 지식은 어설프게 아는 척하지 말고, 직접 확인한 지점과 고교 수준의 한계를 담담하고 정직하게 분리하여 진술합니다.</p>
+                    </div>
+                    <div class="bg-amber-950/40 border border-amber-800/50 p-4 rounded-2xl">
+                        <strong class="text-amber-300 text-base block mb-1.5">2. 실패·오차의 공학적 원인 규명 전환</strong>
+                        <p class="leading-relaxed">모델 성능 저하, 과적합, 센서 오차를 변명하지 않고 데이터 분포나 하드웨어 특성 관점에서 원인을 짚어내며 보완 대안을 증명합니다.</p>
+                    </div>
+                    <div class="bg-amber-950/40 border border-amber-800/50 p-4 rounded-2xl">
+                        <strong class="text-amber-300 text-base block mb-1.5">3. 비주류 교과 활동의 AI 가치관 연결</strong>
+                        <p class="leading-relaxed">국어·문학·역사·미술·심리학 등 구석 1줄 세특의 인문·예술적 성찰을 궁극적으로 '인간 중심 AI 공학자의 기술 철학'으로 유기적으로 귀결시킵니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Guidance Banner -->
+        <div class="bg-gradient-to-r from-orange-900/60 via-amber-900/60 to-slate-900/80 border border-amber-700/40 rounded-3xl p-6 md:p-8 mb-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl text-amber-400 pointer-events-none">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center space-x-2 bg-amber-500/30 border border-amber-400/30 px-3 py-1 rounded-full text-amber-200 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-brain text-amber-300"></i>
+                    <span>대형 폰트 + 4단계 능동 인출(Active Recall) 실전 압박 훈련 시스템</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-black text-white tracking-tight">지엽·기습 방어 편 면접 컨설팅 대시보드 (총 44개 모듈)</h2>
+                <p class="text-slate-300 text-sm md:text-base mt-2 leading-relaxed">
+                    카드를 클릭하면 <strong>질문만 먼저 대형 화면에 표시</strong>됩니다. 학생이 스스로 방어 논리를 구상한 뒤, <strong>Space바</strong> 또는 버튼 클릭으로 <strong>[힌트 ➔ 방어 스크립트 ➔ 꼬리질문 ➔ 꼬리답변]</strong>을 한 단계씩 펼쳐보며 실전 감각을 극대화하세요.
+                </p>
+            </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+            <h3 class="text-xl md:text-2xl font-bold text-amber-300 flex items-center">
+                <i class="fa-solid fa-list-check mr-2.5"></i> 사각지대 완전 정복 42문항 + 지침 카드 덱
+            </h3>
+            <div class="flex flex-wrap gap-2" id="filter-buttons">
+                <button onclick="filterCards('ALL')" data-filter="ALL" class="filter-btn bg-amber-600 text-white px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition">전체 (44)</button>
+                <button onclick="filterCards('PART1')" data-filter="PART1" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition">PART 1: 비주류 교과 (13)</button>
+                <button onclick="filterCards('PART2')" data-filter="PART2" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition">PART 2: 구석 1줄·캠프 (14)</button>
+                <button onclick="filterCards('PART3')" data-filter="PART3" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition">PART 3: 기술 한계·압박 (15)</button>
+            </div>
+        </div>
+
+        <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Dynamically populated question cards via JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-sm text-slate-500 mt-12">
+        <p>첨단고3 이찬우 학생 - [버전 2: 지엽·기습 방어 편] 전남대학교 인공지능학부 수시 면접 책자 &copy; 2027 Professional Consulting System</p>
+    </footer>
+
+    <!-- Fullscreen Slide Viewer Modal -->
+    <div id="slide-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl hidden flex flex-col">
+        <!-- Modal Top Bar -->
+        <div class="bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-wrap items-center justify-between gap-3 shrink-0">
+            <div class="flex items-center space-x-3">
+                <span id="modal-module-tag" class="bg-amber-600 text-white text-sm font-black px-3.5 py-1 rounded-full">DEFENSE</span>
+                <h2 id="modal-module-title" class="text-lg md:text-xl font-bold text-white truncate max-w-md lg:max-w-2xl">지엽·기습 면접 대응 3대 방어 원칙</h2>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button onclick="toggleRevealAll()" id="reveal-all-btn" class="flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-700/60 px-3.5 py-2 rounded-xl text-xs md:text-sm font-bold transition">
+                    <i class="fa-solid fa-eye"></i>
+                    <span id="reveal-all-text">전체 정답 보기 OFF</span>
+                </button>
+                <div id="sub-slide-counter" class="flex items-center space-x-1.5 bg-amber-950/80 border border-amber-700 px-3.5 py-2 rounded-xl text-xs md:text-sm text-amber-200 font-bold">
+                    <span>모듈</span> <span id="current-sub-num">1</span> / <span id="total-sub-num">44</span>
+                </div>
+                <button onclick="closeModule()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition">
+                    <i class="fa-solid fa-xmark mr-1"></i> 닫기 (Esc)
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal Widescreen Body Content Container -->
+        <div id="modal-scroll-container" class="flex-1 overflow-y-auto p-4 md:p-8 max-w-7xl w-full mx-auto flex flex-col items-center">
+            <div id="modal-content-area" class="widescreen-slide bg-slate-900/95 border border-slate-800 rounded-3xl p-6 md:p-10 lg:p-12 shadow-2xl flex flex-col justify-between w-full max-w-6xl my-auto">
+                <!-- Dynamically injected active Q&A sub-slide content -->
+            </div>
+        </div>
+
+        <!-- Modal Footer Navigation Bar -->
+        <div class="bg-slate-900 border-t border-slate-800 px-6 py-4 flex items-center justify-between shrink-0">
+            <button onclick="prevSubSlide()" class="flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-xl font-bold text-sm md:text-base transition">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span id="prev-btn-text">이전 문항</span>
+            </button>
+            <div class="hidden md:flex items-center space-x-4 text-sm text-slate-300">
+                <span class="bg-slate-800 border border-slate-700 px-3 py-1 rounded-lg font-semibold text-amber-300">Space바: 단계별 펼치기</span>
+                <span>방향키(←, →): 문항 전환</span>
+            </div>
+            <button onclick="nextSubSlide()" class="flex items-center space-x-2 bg-amber-600 hover:bg-amber-500 text-white px-5 py-3 rounded-xl font-bold text-sm md:text-base shadow-lg shadow-amber-600/30 transition">
+                <span id="next-btn-text">다음 문항</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Presentation Logic -->
+    <script>
+        const modulesData = [
+            {
+                qNum: "PRINCIPLE",
+                part: "GUIDE",
+                area: "3대 방어 원칙",
+                title: "지엽·기습 면접 대응 3대 방어 원칙 (과락 방지 및 성장형 서사 전환)",
+                source: "1) 한계의 솔직한 인정  2) 공학적 원인 규명  3) 인문·예술 활동의 AI 가치관 귀결",
+                keywords: "과락(F) 방어, 원인 규명, 성장형 서사, 인간 중심 기술 철학",
+                rawScript: "첫째, 고교 수준을 벗어난 전문 지식은 어설프게 아는 척하지 말고 직접 확인한 지점과 고교 수준의 한계를 솔직하게 분리하여 진술합니다. 둘째, 프로젝트 중 발생한 성능 저하·과적합·센서 오차를 변명하지 않고 데이터 분포나 하드웨어 특성 관점에서 공학적 원인을 짚어내며 보완 대안을 증명합니다. 셋째, 국어·문학·역사·미술·심리학 등 구석 1줄 세특의 인문·예술적 성찰을 '인간의 존엄성을 지키고 사회적 문제를 해결하는 AI 공학자의 기술 철학'으로 유기적으로 귀결시킵니다.",
+                highlights: ["직접 확인한 지점과 고교 수준의 한계를 솔직하게 분리", "공학적 원인을 짚어내며 보완 대안을 증명", "'인간의 존엄성을 지키고 사회적 문제를 해결하는 AI 공학자의 기술 철학'"],
+                isOverview: true
+            },
+            // PART 1: 13 Questions
+            {
+                qNum: "P1-01",
+                part: "PART1",
+                area: "3학년 화법과 작문",
+                title: "원-핫 인코딩의 한계를 보완하기 위해 2차원 좌표 평면에 임베딩 벡터를 시각화했다고 했는데, 원-핫 인코딩의 차원 폭발 문제와 희소 행렬의 한계를 어떻게 수학적으로 이해했나요?",
+                source: "자연어 전처리 수리 모델링 기초 검증",
+                keywords: "차원의 저주, 희소 행렬, 밀집 벡터 사상, 코사인 유사도",
+                rawScript: "원-핫 인코딩은 단어의 수가 증가할수록 벡터 차원이 무한히 커지는 '차원의 저주'와 원소 대부분이 0이 되는 희소 행렬로 인해 연산 자원이 낭비되는 명확한 한계를 지니고 있음을 확인했습니다. 당시 탐구에서는 단어 간의 유의미한 거리나 유사도를 표현할 수 없는 문제를 직관적으로 체감하고, 실수 공간에 단어를 밀집 벡터로 축소 사상하는 임베딩의 필요성을 2차원 평면 좌표를 통해 시각적으로 도출했습니다. 고교 수준에서 고차원 매니폴드 전체를 직접 수치화하진 못했지만, 코사인 유사도와 내적 연산이 단어 사이의 의미적 거리를 측정하는 핵심 수리 도구임을 깨달았습니다. 전남대 인공지능학부에서 선형대수와 차원 축소 기법(PCA, t-SNE)을 심화 학습하여 대용량 멀티모달 데이터의 최적 임베딩 공간을 설계하고 싶습니다.",
+                highlights: ["'차원의 저주'와 원소 대부분이 0이 되는 희소 행렬", "밀집 벡터로 축소 사상하는 임베딩", "코사인 유사도와 내적 연산"],
+                tailQuestion: "단어 벡터 간의 유사도를 측정할 때 유클리드 거리보다 코사인 유사도를 선호하는 공학적 이유는 무엇인가요?",
+                tailGuidance: "벡터 크기(문서 길이·빈도)의 영향을 배제하고 순수한 방향성(각도)만을 비교하여 의미적 연관성을 포착함을 설명",
+                tailHighlights: ["벡터 크기(크기값)의 영향을 크게 받지만", "순수한 '방향성(각도)'만을 비교하여 의미적 연관성을 정밀하게 포착"],
+                tailScript: "유클리드 거리는 문서의 길이나 단어 빈도수에 따른 벡터 크기(크기값)의 영향을 크게 받지만, 코사인 유사도는 크기와 무관하게 벡터 간의 순수한 '방향성(각도)'만을 비교하여 의미적 연관성을 정밀하게 포착하기 때문입니다."
+            },
+            {
+                qNum: "P1-02",
+                part: "PART1",
+                area: "3학년 화법과 작문",
+                title: "AI 추천 알고리즘의 확증 편향과 필터버블 문제를 지적하며 실생활 완화 방안을 제안했는데, 알고리즘이 수익성 극대화와 사용자의 정보 다양성 사이에서 어떻게 균형을 잡아야 한다고 보나요?",
+                source: "추천 시스템 편향성 비판 및 엔지니어 윤리관 검증",
+                keywords: "필터버블, 정보 다양성 페널티 항, 다목적 최적화",
+                rawScript: "상업적 추천 알고리즘이 사용자의 과거 체류 시간과 클릭률만을 최적화 지표로 삼을 경우, 유사한 자극성 정보만을 반복 노출하여 인지적 왜곡과 사회적 분극화를 심화시킨다는 점을 비판적으로 고찰했습니다. 보고서 작성 당시 목적함수에 단순 클릭률 가중치뿐만 아니라 정보의 이질성과 다양성을 보장하는 페널티 항을 수리적으로 결합해야 한다는 대안을 정리했습니다. 알고리즘 설계자가 정의하는 손실함수의 단 한 줄이 이용자의 가치관 형성에 막대한 영향을 미친다는 사실을 절감했습니다. 전남대에서 인간 중심의 추천 시스템을 연구하여, 상업적 효용성과 사회적 공공성을 동시에 수호하는 다목적 최적화 알고리즘을 개발하겠습니다.",
+                highlights: ["정보의 이질성과 다양성을 보장하는 페널티 항을 수리적으로 결합", "손실함수의 단 한 줄이 이용자의 가치관 형성에 막대한 영향", "다목적 최적화 알고리즘"],
+                tailQuestion: "추천 알고리즘에서 정보의 의외성을 제공하는 '세렌디피티(Serendipity)' 추천을 수리적으로 구현할 수 있는 방법은 무엇인가요?",
+                tailGuidance: "탐색(Exploration) 확률에 따라 무작위 배분하는 다중 무장 밴딧(Multi-Armed Bandit) 기법 제시",
+                tailHighlights: ["탐색(Exploration) 확률에 따라 무작위 배분", "'다중 무장 밴딧(Multi-Armed Bandit)' 기법"],
+                tailScript: "사용자의 기존 취향 벡터와 유사도가 다소 낮으면서도 전체 사용자 집단에서 객관적 평점이 높은 아이템을 탐색(Exploration) 확률에 따라 무작위 배분하는 '다중 무장 밴딧(Multi-Armed Bandit)' 기법을 도입할 수 있습니다."
+            },
+            {
+                qNum: "P1-03",
+                part: "PART1",
+                area: "3학년 화법과 작문",
+                title: "인공지능 확산에 따른 고용 변화와 기본소득 도입 필요성을 논술했는데, 기술 혁신으로 인한 일자리 소멸 위험을 공학자로서 어떻게 바라보고 있나요?",
+                source: "기술 진보에 따른 사회경제적 영향 분석력 평가",
+                keywords: "사회적 완충 장치, 협업 지능, 피지컬 협동 지능",
+                rawScript: "인공지능에 의한 자동화가 단순 반복 직무를 빠르게 대체하여 과도기적인 고용 불안정과 사회적 양극화를 초래할 수 있다는 통계적 정황을 객관적으로 분석했습니다. 기술의 발전 속도를 인위적으로 늦추기보다는 기본소득이나 재교육 안전망과 같은 사회적 완충 장치가 병행되어야만 기술 수용성이 극대화될 수 있음을 논증했습니다. 공학자가 기술적 효율성만을 좇을 때 사회적 약자가 배제될 수 있음을 깨달았고, 인간을 대체하는 AI가 아닌 노동자의 역량을 증강하는 협업 지능을 지향해야 한다는 신념을 굳혔습니다. 전남대에서 산업 현장의 작업 효율과 인간의 안전을 동시에 높이는 피지컬 협동 지능 시스템을 연구하고자 합니다.",
+                highlights: ["사회적 완충 장치가 병행되어야만 기술 수용성이 극대화", "노동자의 역량을 증강하는 협업 지능", "피지컬 협동 지능 시스템"],
+                tailQuestion: "고용 대체율이 높은 인공지능 시스템을 개발하는 연구자가 가져야 할 윤리적 책무는 무엇이라고 생각하나요?",
+                tailGuidance: "직관적 기술 적응 인터페이스 설계 및 초기 단계부터 인간 노동자와의 협업 요구사항 반영 답변",
+                tailHighlights: ["기술 적응 인터페이스를 직관적으로 설계", "인간 노동자와의 협업 가능성을 설계 요구사항에 반영"],
+                tailScript: "시스템 도입으로 전환 배치가 필요한 인력에 대한 기술 적응 인터페이스를 직관적으로 설계하고, 개발 초기 단계부터 인간 노동자와의 협업 가능성을 설계 요구사항에 반영하는 것입니다."
+            },
+            {
+                qNum: "P1-04",
+                part: "PART1",
+                area: "3학년 영미 문학 읽기",
+                title: "웬델 베리의 시를 분석하며 자연의 평화로움과 인간 사회의 불안을 대비했는데, 차가운 컴퓨터 기술을 공부하면서 이러한 문학적 정서가 공학도에게 왜 필요하다고 생각했나요?",
+                source: "인문학적 통찰과 공학적 상상력의 결합도 평가",
+                keywords: "심리적 안정, 인간 친화적 인터페이스, 감성 피지컬 컴퓨팅",
+                rawScript: "복잡한 수식과 코드를 다루는 공학일수록 기술이 도달해야 할 궁극적인 목적지는 인간의 심리적 안정과 자연과의 조화에 닿아 있어야 함을 시적 은유를 통해 깨달았습니다. 기술 만능주의에 빠져 생태계의 복원력과 인간의 고유한 쉼을 도외시한다면 그 알고리즘은 사회적 피로도를 가중시킬 뿐이라는 문제의식을 다졌습니다. 문학 작품의 행간을 읽으며 기른 공감 능력은 사용자의 미세한 정서적 요구를 감지하고 인터페이스를 인간 친화적으로 설계하는 직관의 원천이 되었습니다. 전남대학교에서 기술의 효율성에 매몰되지 않고, 사용자의 심리적 안정과 삶의 질을 온화하게 지켜주는 감성 피지컬 컴퓨팅을 연구하겠습니다.",
+                highlights: ["인간의 심리적 안정과 자연과의 조화", "인터페이스를 인간 친화적으로 설계하는 직관의 원천", "감성 피지컬 컴퓨팅"],
+                tailQuestion: "자연의 회복력을 모방하여 인공지능 알고리즘에 적용한 대표적인 사례가 있다면 무엇인가요?",
+                tailGuidance: "생물 진화 과정을 모방한 유전 알고리즘(Genetic Algorithm) 및 군집 지능(Swarm Intelligence) 제시",
+                tailHighlights: ["유전 알고리즘(Genetic Algorithm)", "군집 지능(Swarm Intelligence)"],
+                tailScript: "자연계의 생물 진화 과정을 모방하여 무작위 변이와 선택을 통해 최적해를 찾아가는 유전 알고리즘(Genetic Algorithm)이나 군집 지능(Swarm Intelligence)이 있습니다."
+            },
+            {
+                qNum: "P1-05",
+                part: "PART1",
+                area: "3학년 영미 문학 읽기",
+                title: "영화 '원더'의 주인공이 헬멧을 벗고 세상으로 나오는 장면에서 내면의 성장을 보았다고 했는데, 이것이 장애인 보조 AI 기술관에 어떤 영향을 주었나요?",
+                source: "기술의 사회적 수용성과 배리어프리 철학 검증",
+                keywords: "연결의 다리, 비간섭형 인터페이스, 리빙랩 프로젝트",
+                rawScript: "기술적 보조 장치가 장애인을 외부 시선으로부터 숨겨주는 '차폐의 헬멧'이 되어서는 안 되며, 당사자가 세상과 대등하게 소통하도록 돕는 '연결의 다리'가 되어야 한다는 점을 깊이 통감했습니다. 고교 시절 구상했던 배리어프리 기기들이 자칫 시각장애인을 기술에 종속된 수동적 존재로 고립시키지 않도록, 사용자 자율성을 극대화하는 보이지 않는 지원 시스템이어야 함을 정립했습니다. 사용자의 자존감을 지켜주는 비간섭형 인터페이스의 중요성을 체득했습니다. 전남대학교의 지역 사회 연계 리빙랩 프로젝트에 참여하여, 장애인이 사회의 중심에 당당히 설 수 있도록 돕는 실용적 보조 지능 시스템을 구현하고 싶습니다.",
+                highlights: ["세상과 대등하게 소통하도록 돕는 '연결의 다리'", "비간섭형 인터페이스의 중요성", "실용적 보조 지능 시스템"],
+                tailQuestion: "시각장애인을 위한 웨어러블 디바이스 설계 시 '외형적 낙인(Stigma)'을 줄이기 위한 공학적 접근은 무엇인가요?",
+                tailGuidance: "일반 안경 테나 의복 단추 형태로 센서와 카메라를 초소형화하여 임베딩하는 온디바이스 일체형 설계 답변",
+                tailHighlights: ["일반 안경 테나 의복의 단추 형태로 센서와 카메라를 초소형화", "온디바이스 일체형 설계"],
+                tailScript: "투박한 대형 센서를 겉으로 드러내지 않고 일반 안경 테나 의복의 단추 형태로 센서와 카메라를 초소형화하여 임베딩하는 온디바이스 일체형 설계입니다."
+            },
+            {
+                qNum: "P1-06",
+                part: "PART1",
+                area: "3학년 여행지리",
+                title: "석굴암 일제강점기 보수공사의 결로 문제를 지리·기후적 관점에서 비판했는데, 환경 데이터를 제어하는 AI 스마트 공조 시스템 관점에서 이를 어떻게 해결할 수 있나요?",
+                source: "문화유산 보존과 센서 기반 정밀 제어 융합 역량 평가",
+                keywords: "이슬점(Dew Point) 예측, 동적 공조 제어, 정밀 보존 AI",
+                rawScript: "일제가 도입한 콘크리트 덧씌움 방식은 화강암 자체의 자연 통풍과 잠열 방출 메커니즘을 파괴하여 구조적인 습기 결로를 초래한 대표적인 실패 사례임을 분석했습니다. 이를 현대적으로 해결하기 위해서는 암석 표면의 미세 온습도 센서와 외부 기상 데이터를 실시간 스트리밍으로 연동하고, 이슬점(Dew Point) 온도를 예측하여 급격한 온도 역전을 선제 차단하는 동적 공조 제어 알고리즘이 필요합니다. 물리학적 자연 환기 원리와 데이터 제어가 결합될 때 비로소 건축물의 생명력이 유지됨을 배웠습니다. 전남대에서 사물인터넷(IoT) 센서 네트워크와 강화학습 기반 공조 최적화 기술을 이수하여 전통 문화유산의 수명을 지키는 정밀 보존 AI를 완성하겠습니다.",
+                highlights: ["이슬점(Dew Point) 온도를 예측하여 급격한 온도 역전을 선제 차단", "동적 공조 제어 알고리즘", "정밀 보존 AI"],
+                tailQuestion: "결로 현상을 예방하기 위해 센서 네트워크에서 가장 중요하게 감시해야 할 물리 변수는 무엇인가요?",
+                tailGuidance: "공기 중 상대습도와 암석 표면 온도로 계산되는 '이슬점 온도'와 '표면 온도'의 편차라고 답변",
+                tailHighlights: ["'이슬점 온도'와 '표면 온도'의 편차"],
+                tailScript: "공기 중의 상대습도와 암석 표면 온도를 기반으로 실시간 계산되는 '이슬점 온도'와 '표면 온도'의 편차입니다."
+            },
+            {
+                qNum: "P1-07",
+                part: "PART1",
+                area: "3학년 환경",
+                title: "플라스틱 폐기물 문제 해결을 위해 'AI 쓰레기 분리수거 시스템'을 제안했는데, 실제 현장에서 발생하는 이물질 오염이나 비정형 폐기물 분류의 기술적 한계를 어떻게 극복할 것인가요?",
+                source: "컴퓨터 비전의 현장 한계 및 데이터 증강 해결책 검증",
+                keywords: "비정형 한계 인정, 데이터 증강(Augmentation), 다중 분광 적외선 센서",
+                rawScript: "고교 수준의 모형 제안 단계에서는 깨끗한 정형 플라스틱 이미지 중심의 분류를 상정했기 때문에, 현장의 기름 때, 라벨 오염, 찌그러진 비정형 폐기물이 유발하는 오인식 문제를 완전히 해결하지 못했다는 한계를 솔직히 인정합니다. 이를 보완하기 위해 찌그러짐, 반사광, 오염 노이즈를 인위적으로 합성한 광범위한 데이터 증강(Augmentation) 파이프라인을 구축하고, 다중 분광(Multispectral) 적외선 센서를 융합해 광학적 재질 특성을 교차 검증해야 함을 추가 학습했습니다. 단순한 RGB 영상 판별의 한계를 인정하는 것이 산업용 비전 AI의 출발점임을 배웠습니다. 전남대학교의 로봇 비전 연구실에서 조명 변화와 가림에 강건한 복합 센서 기반 폐기물 선별 자동화 솔루션을 구축하고 싶습니다.",
+                highlights: ["오인식 문제를 완전히 해결하지 못했다는 한계를 솔직히 인정", "데이터 증강(Augmentation) 파이프라인을 구축", "다중 분광(Multispectral) 적외선 센서를 융합"],
+                tailQuestion: "투명 페트병과 반투명 플라스틱의 경계면을 정밀하게 추출하기 위한 비전 알고리즘 기법은 무엇인가요?",
+                tailGuidance: "편광 카메라 데이터와 U-Net 기반 시맨틱 세그멘테이션 기법 적용 제시",
+                tailHighlights: ["편광 카메라 데이터", "U-Net 기반의 시맨틱 세그멘테이션 기법"],
+                tailScript: "단순 임계값 분할 대신 빛의 굴절과 편광 특성을 감지하는 편광 카메라 데이터와 U-Net 기반의 시맨틱 세그멘테이션 기법을 적용해야 합니다."
+            },
+            {
+                qNum: "P1-08",
+                part: "PART1",
+                area: "3학년 심리학",
+                title: "조작적 조건형성의 정적 강화와 부적 처벌 원리를 인공지능 학습 메커니즘에 적용해 보고서를 썼는데, 심리학 이론과 강화학습의 수학적 유사성은 무엇인가요?",
+                source: "심리학 이론과 강화학습 보상 함수의 수학적 연결성 평가",
+                keywords: "마르코프 결정 과정(MDP), 스칼라 보상 매핑, 자율 에이전트",
+                rawScript: "쥐가 지렛대를 누르면 먹이를 얻는 심리학적 조작적 조건형성은, 에이전트가 환경과 상호작용하며 누적 보상(Reward)을 최대화하는 방향으로 정책(Policy)을 갱신하는 강화학습의 마르코프 결정 과정(MDP)과 수학적 본질을 공유함을 규명했습니다. 당시 보고서에서는 정적 강화는 양의 스칼라 보상으로, 처벌은 페널티 음수 보상으로 매핑하여 행동 확률 분포가 갱신되는 원리를 수치화했습니다. 인간의 학습 행동 모델이 기계학습의 최적화 수식으로 정밀하게 번역될 수 있음을 확인했습니다. 전남대 인공지능학부의 강화학습 및 진화기계지능 연구팀에서 인간의 인지 심리를 반영한 고안전성 자율 에이전트 제어 모델을 설계하고 싶습니다.",
+                highlights: ["강화학습의 마르코프 결정 과정(MDP)과 수학적 본질을 공유", "정적 강화는 양의 스칼라 보상으로, 처벌은 페널티 음수 보상으로 매핑", "고안전성 자율 에이전트 제어 모델"],
+                tailQuestion: "강화학습에서 과도한 처벌(큰 음수 보상)을 부여할 때 에이전트가 학습 과정에서 겪는 부작용은 무엇인가요?",
+                tailGuidance: "어떠한 행동도 시도하지 않고 제자리에 머무는 '학습된 무기력'이나 국소 정체 상태 부작용 설명",
+                tailHighlights: ["'학습된 무기력'이나 국소 정체 상태"],
+                tailScript: "에이전트가 처벌을 피하기 위해 어떠한 행동도 시도하지 않고 제자리에 머무는 '학습된 무기력'이나 국소 정체 상태에 빠질 수 있습니다."
+            },
+            {
+                qNum: "P1-09",
+                part: "PART1",
+                area: "2학년 문학",
+                title: "'로봇 중독' 서평에서 '전투용 로봇의 윤리적 정당성'에 의문을 던졌는데, 살상용 자율무기체계(LAWS) 개발에 대한 공학도로서의 확고한 기준은 무엇인가요?",
+                source: "국방 AI 기술의 한계 인식 및 인간 개입 필수성(HITL) 철학 검증",
+                keywords: "휴먼 인 더 루프(HITL), 윤리적 브레이크, 수호형 국방 지능",
+                rawScript: "국가 안보를 위한 정찰이나 탐색 목적의 군사 AI 연구는 국방력 강화를 위해 불가피하지만, 인간의 생명을 빼앗는 최종 타격 결정권만큼은 절대 알고리즘에 위임해서는 안 된다는 확고한 선을 그었습니다. 아무리 정밀한 인공신경망이라도 오탐지 확률과 적대적 공격 취약성을 100% 배제할 수 없기에, 치명적 결정 단계에는 반드시 인간이 개입하는 '휴먼 인 더 루프(Human-in-the-Loop)'가 국제 규범으로 확립되어야 함을 역설했습니다. 기술의 위력이 커질수록 공학자가 지녀야 할 윤리적 브레이크의 무게감도 무거워져야 함을 깨달았습니다. 전남대학교의 국방무인체계 연구 환경 속에서도 군인의 인명 피해를 방지하고 방어력을 극대화하는 수호형 국방 지능 개발에 전념하겠습니다.",
+                highlights: ["최종 타격 결정권만큼은 절대 알고리즘에 위임해서는 안 된다", "'휴먼 인 더 루프(Human-in-the-Loop)'", "수호형 국방 지능 개발"],
+                tailQuestion: "군사 AI 시스템에서 '적대적 섭동(Adversarial Perturbation)' 공격이 유발할 수 있는 가장 위험한 시나리오는 무엇인가요?",
+                tailGuidance: "눈에 보이지 않는 미세 노이즈 주입으로 아군이나 민간인을 적군으로 오인식하는 오폭 참사 답변",
+                tailHighlights: ["눈에는 보이지 않는 미세한 노이즈를 주입", "아군이나 민간인을 적군으로 오인식하게 만드는 오폭 참사"],
+                tailScript: "표적 식별 센서 영상에 인간의 눈에는 보이지 않는 미세한 노이즈를 주입하여 아군이나 민간인을 적군으로 오인식하게 만드는 오폭 참사입니다."
+            },
+            {
+                qNum: "P1-10",
+                part: "PART1",
+                area: "2학년 독서",
+                title: "'언락AI'를 읽고 '인공지능이 인간의 일을 대체하기보다 재구성한다'는 관점을 도출했는데, 전통적 소프트웨어 엔지니어링의 역할은 AI 시대에 어떻게 재구성된다고 보나요?",
+                source: "소프트웨어 개발 패러다임 변화에 대한 통찰력 평가",
+                keywords: "시스템 감독관, 아키텍처 설계, 상위 아키텍트",
+                rawScript: "단순한 문법적 코딩이나 보일러플레이트 코드 작성은 생성형 AI가 압도적인 속도로 대체하고 있지만, 전체 시스템 아키텍처의 설계와 예외 상황 방어 로직 검증은 엔지니어의 고유 영역으로 격상되고 있습니다. 과거의 프로그래머가 '코드를 직접 작성하는 노동자'였다면, 미래의 엔지니어는 AI가 생성한 코드의 보안 취약점과 수학적 시간 복잡도를 정밀하게 감사하는 '시스템 감독관'으로 재구성되고 있음을 확인했습니다. 따라서 단순 코딩 테크닉보다 자료구조, 운영체제, 기초 수학의 본질적 통찰이 훨씬 중요해졌음을 절감했습니다. 전남대에서 컴퓨터공학의 뼈대를 이루는 기반 시스템 이론을 치열하게 이수하여 생성형 AI 도구를 주도적으로 제어하는 상위 아키텍트가 되겠습니다.",
+                highlights: ["전체 시스템 아키텍처의 설계와 예외 상황 방어 로직 검증", "'시스템 감독관'으로 재구성", "생성형 AI 도구를 주도적으로 제어하는 상위 아키텍트"],
+                tailQuestion: "LLM이 작성한 코드를 실제 프로덕션 서버에 배포하기 전에 반드시 거쳐야 할 검증 단계는 무엇인가요?",
+                tailGuidance: "정적 코드 분석을 통한 취약점 점검과 엣지 케이스 단위 테스트 커버리지 95% 이상 달성 확인",
+                tailHighlights: ["정적 코드 분석을 통한 메모리 누수 및 인젝션 취약점 점검", "단위 테스트(Unit Test) 커버리지 95% 이상"],
+                tailScript: "자동화된 정적 코드 분석을 통한 메모리 누수 및 인젝션 취약점 점검과, 엣지 케이스를 망라한 단위 테스트(Unit Test) 커버리지 95% 이상 달성 여부 확인입니다."
+            },
+            {
+                qNum: "P1-11",
+                part: "PART1",
+                area: "2학년 독서",
+                title: "한옥의 자연 친화적 지혜를 긍정하면서도 화재 위험과 현대적 공간 비효율이라는 한계를 비판적으로 짚었는데, 전통 기술을 대하는 공학자의 올바른 시각은 무엇인가요?",
+                source: "비판적 기술 수용 태도 및 현대적 계승 공학관 검증",
+                keywords: "성찰적 시각, 아키텍처 병목 파악, 혁신적 연구자",
+                rawScript: "전통 기술의 고유한 철학과 생태적 가치는 온전히 계승하되, 현대의 안전 기준과 기능적 요구를 충족하지 못하는 구조적 취약점은 첨단 신소재와 제어 공학으로 단호히 보완해야 한다는 성찰적 시각을 정립했습니다. 과거의 방식을 맹목적으로 이상화하는 것은 기술적 퇴보이며, 과거의 지혜를 현대 공학적 문제 정의의 출발점으로 삼는 것이 진정한 혁신임을 배웠습니다. 이러한 비판적 분석 태도는 기존 오픈소스 인공지능 프레임워크를 맹신하지 않고 아키텍처의 병목을 냉철하게 파악하는 공학적 습관으로 이어졌습니다. 전남대에서 선배 교수진의 연구 성과를 존중하며, 그 한계를 냉철히 짚고 넘어서는 혁신적 연구자가 되겠습니다.",
+                highlights: ["구조적 취약점은 첨단 신소재와 제어 공학으로 단호히 보완", "아키텍처의 병목을 냉철하게 파악하는 공학적 습관", "한계를 냉철히 짚고 넘어서는 혁신적 연구자"],
+                tailQuestion: "전통 목조 건축물의 화재 취약성을 조기에 감지하기 위한 AI 비전 기반 화재 감지 모델의 핵심 과제는 무엇인가요?",
+                tailGuidance: "비화재 환경 요소(황색 조명, 일몰 빛, 먼지)와 실제 불꽃·연기를 구별하는 오경보 억제 필터링",
+                tailHighlights: ["비화재 환경 요소를 실제 불꽃 및 연기와 수리적으로 정밀하게 구별", "오경보(False Alarm) 억제 필터링"],
+                tailScript: "황색 조명, 일몰 빛, 먼지와 같은 비화재 환경 요소를 실제 불꽃 및 연기와 수리적으로 정밀하게 구별하는 오경보(False Alarm) 억제 필터링입니다."
+            },
+            {
+                qNum: "P1-12",
+                part: "PART1",
+                area: "2학년 한국사",
+                title: "독도 영유권의 역사적 정당성을 국제법과 사료를 통해 비판적으로 논증했는데, 역사적 팩트 체크 과정에서 발휘된 분석력이 데이터 과학에 어떻게 연결되나요?",
+                source: "사료 비판력과 데이터 정제(Data Cleaning) 역량의 융합 평가",
+                keywords: "사료 비판 방법론, 데이터 클리닝, 출처 신뢰도(Provenance)",
+                rawScript: "일본의 시마네현 고시 제40호의 기만성을 밝혀내기 위해 다양한 1차 사료와 조약 문서를 교차 검증하며 왜곡된 주장의 허점을 찾아내는 역사적 비판 과정을 수행했습니다. 이처럼 출처가 불분명하거나 편향된 문헌을 걸러내는 사료 비판의 방법론은, 편향되거나 오염된 노이즈 데이터를 식별하여 정제하는 머신러닝 데이터 클리닝 작업과 논리적 본질이 동일함을 깨달았습니다. 데이터의 출처(Provenance)와 신뢰도를 철저히 따지지 않고 모델을 학습시키는 것은 왜곡된 역사관을 학습하는 것과 같이 위험함을 배웠습니다. 전남대에서 데이터 편향 정제 및 고신뢰성 코퍼스 구축 기술을 깊이 있게 연마하겠습니다.",
+                highlights: ["사료 비판의 방법론", "머신러닝 데이터 클리닝 작업과 논리적 본질이 동일", "데이터의 출처(Provenance)와 신뢰도를 철저히 따지지 않고"],
+                tailQuestion: "머신러닝 학습 데이터셋 구축 시 데이터의 출처 신뢰성을 검증하기 위한 공학적 방법은 무엇인가요?",
+                tailGuidance: "암호학적 해시값으로 수집·변형 이력을 기록하는 데이터 리니지(Data Lineage) 추적 기술과 통계 탐지 결합",
+                tailHighlights: ["'데이터 리니지(Data Lineage)' 추적 기술", "이상치 통계 탐지 알고리즘을 결합"],
+                tailScript: "데이터의 수집 경로와 변형 이력을 암호학적 해시값으로 기록하는 '데이터 리니지(Data Lineage)' 추적 기술과 이상치 통계 탐지 알고리즘을 결합하는 것입니다."
+            },
+            {
+                qNum: "P1-13",
+                part: "PART1",
+                area: "2학년 미술 창작",
+                title: "원근법을 적용한 투시 드로잉 활동을 수행했는데, 3차원 공간을 2차원 평면에 투영하는 원근법이 컴퓨터 그래픽스와 컴퓨터 비전의 투영 기하학과 어떻게 연결되나요?",
+                source: "공간 투영 미술 기법과 3D 비전 기하학의 수리적 연계 검증",
+                keywords: "동차 좌표계 투영 변환 행렬, 스케일 왜곡, 3D 장면 복원",
+                rawScript: "화폭의 소실점과 지평선을 기준으로 3차원 입체물을 2차원 캔버스에 사상하는 투시 원근법은, 3차원 현실 공간 좌표(X,Y,Z)를 카메라 센서 평면(x,y)으로 변환하는 동차 좌표계(Homogeneous Coordinates) 기반의 투영 변환 행렬과 정확히 일치함을 학습했습니다. 붓으로 거리를 표현하던 미술적 체험을 통해 시점(Perspective) 변화에 따른 스케일 왜곡과 깊이(Depth) 손실의 기하학적 메커니즘을 직관적으로 체감했습니다. 이 경험은 자율주행 차량의 단안 카메라 영상에서 3차원 바운딩 박스를 복원하는 기하학적 수리 역량의 단단한 시각적 토대가 되었습니다. 전남대 인공지능학부에서 다중 뷰 기하학과 3D Gaussian Splatting 등 3차원 장면 복원 기술을 본격적으로 연구하고 싶습니다.",
+                highlights: ["동차 좌표계(Homogeneous Coordinates) 기반의 투영 변환 행렬", "스케일 왜곡과 깊이(Depth) 손실의 기하학적 메커니즘", "3D Gaussian Splatting 등 3차원 장면 복원 기술"],
+                tailQuestion: "3차원 회전과 투영을 행렬로 연산할 때 동차 좌표(Homogeneous Coordinates)를 사용하는 수학적 이유는 무엇인가요?",
+                tailGuidance: "평행 이동(Translation) 변환을 포함해 회전·크기·이동을 4x4 단일 행렬 곱으로 일괄 처리하기 위함",
+                tailHighlights: ["평행 이동(Translation) 변환은 일반 3x3 행렬 곱으로 표현할 수 없으므로", "4x4 행렬을 통해 회전, 크기, 이동 변환을 단일 행렬 곱으로 일괄 처리"],
+                tailScript: "3차원 공간의 평행 이동(Translation) 변환은 일반 3x3 행렬 곱으로 표현할 수 없으므로, 차원을 하나 확장한 4x4 행렬을 통해 회전, 크기, 이동 변환을 단일 행렬 곱으로 일괄 처리하기 위함입니다."
+            },
+            // PART 2: 14 Questions
+            {
+                qNum: "P2-01",
+                part: "PART2",
+                area: "1학년 자율활동",
+                title: "장애인식교육 후 장애인 돌봄법이 장애인을 '의존적 존재'로 규정하는 한계를 비판했는데, 학생이 생각하는 대안적 법률 관점과 공학 기술의 역할은 무엇인가요?",
+                source: "사회 복지 법제 한계 인식 및 보조 공학 철학 검증",
+                keywords: "자립 환경 조성, 주체적 보조 도구, 배리어프리 임베디드",
+                rawScript: "기존 복지 법률이 시혜적이고 수동적인 돌봄에 머물러 장애인의 주체적인 자기 결정권과 사회 참여 기회를 제약한다는 점에 깊은 문제의식을 느꼈습니다. 법률은 독립적인 생활을 영위할 수 있는 자립 환경 조성을 기본권으로 보장해야 하며, 공학 기술은 인간 보조자의 개입 없이도 이동과 노동이 가능하도록 물리적 장벽을 제거하는 주체적 보조 도구가 되어야 한다고 정리했습니다. 공학의 진정한 존재 가치는 소외된 사람들에게 자율성을 되돌려주는 데 있음을 깨달았습니다. 전남대 입학 후 인간의 신체적 제약을 보완하는 스마트 배리어프리 임베디드 제어 시스템을 주도적으로 개발하겠습니다.",
+                highlights: ["자립 환경 조성을 기본권으로 보장", "물리적 장벽을 제거하는 주체적 보조 도구", "스마트 배리어프리 임베디드 제어 시스템"],
+                tailQuestion: "장애인 이동 보조 기기에서 '과도한 자동화'가 사용자에게 줄 수 있는 부정적 심리 요인은 무엇인가요?",
+                tailGuidance: "사용자가 통제감을 상실하고 기기에 전적으로 예속되는 무력감을 느낄 수 있음을 설명",
+                tailHighlights: ["자신의 통제감을 상실", "기기에 전적으로 예속되는 무력감"],
+                tailScript: "기기가 모든 결정을 대신 내릴 때 사용자가 자신의 통제감을 상실하고 기기에 전적으로 예속되는 무력감을 느낄 수 있습니다."
+            },
+            {
+                qNum: "P2-02",
+                part: "PART2",
+                area: "1학년 동아리활동",
+                title: "토론 동아리에서 '지속 가능한 경영이 기업에 장기적 이익을 가져다주는가?'에 대해 다수가 찬성할 때 홀로 '반대' 입장을 펼친 논리적 근거는 무엇이었나요?",
+                source: "비판적 독립 사고력 및 데이터 기반 반론 구성력 검증",
+                keywords: "재무 위험 입증, 공학적 트레이드오프, 현실적 제약 평가",
+                rawScript: "ESG 경영이라는 이상적인 구호 뒤편에 숨은 과도한 초기 설비 투자 비용과 정량적 성과 측정의 불확실성으로 인해 특히 중소제조기업의 단기 생존이 위협받을 수 있다는 객관적 재무 위험을 근거로 반대 논리를 폈습니다. 대세에 휩쓸리지 않고 기술과 정책 도입에 따르는 실질적인 경제적 마찰과 기회비용을 데이터로 입증하고자 치열하게 토론했습니다. 다수의 통념에 맹종하지 않고 숨은 비용과 공학적 트레이드오프를 끝까지 파고드는 분석적 태도를 길렀습니다. 전남대에서 인공지능 모델을 도입할 때도 이상적 성능 지표뿐만 아니라 추론 비용과 에너지 소비량 같은 현실적 제약을 엄정히 평가하는 균형 잡힌 공학자가 되겠습니다.",
+                highlights: ["객관적 재무 위험을 근거로 반대 논리", "숨은 비용과 공학적 트레이드오프를 끝까지 파고드는 분석적 태도", "추론 비용과 에너지 소비량 같은 현실적 제약을 엄정히 평가"],
+                tailQuestion: "AI 모델의 지속 가능성을 평가할 때 사용하는 '그린 AI(Green AI)'의 핵심 지표는 무엇인가요?",
+                tailGuidance: "모델 정확도 대비 소비 전력량(FLOPs)과 배출되는 탄소 발자국(Carbon Footprint)의 비율 답변",
+                tailHighlights: ["소비되는 전력량(FLOPs)", "탄소 발자국(Carbon Footprint)의 비율"],
+                tailScript: "모델의 정확도 대비 학습 및 추론 과정에서 소비되는 전력량(FLOPs)과 그로 인해 배출되는 탄소 발자국(Carbon Footprint)의 비율입니다."
+            },
+            {
+                qNum: "P2-03",
+                part: "PART2",
+                area: "1학년 동아리활동",
+                title: "'AI가 가수의 목소리를 똑같이 흉내 내는 것을 허용해야 하는가?'라는 토론에서 긍정적 입장을 제시했는데, 원작자의 저작인격권 침해 문제는 어떻게 방어할 수 있나요?",
+                source: "생성형 음성 AI 저작권 분쟁에 대한 공학적 타협안 검증",
+                keywords: "스마트 컨트랙트, AI 워터마크 의무화, 보이스 딥페이크 탐지",
+                rawScript: "소비자의 문화 향유권과 창작의 다양성 확대를 위해 기술적 시도 자체를 금지해서는 안 된다는 긍정적 측면을 변론했으나, 원작 가수의 음성 데이터 무단 도용은 명백한 권리 침해라는 점을 충분히 인지하고 있었습니다. 이를 해결하기 위해 음성 합성 모델 학습 시 원작자의 사전 동의를 거치는 라이선스 블록체인 스마트 컨트랙트를 도입하고, 생성된 음원 파일에 AI 워터마크 삽입을 의무화해야 한다는 기술적 보완책을 제시했습니다. 권리의 보호와 혁신의 자유는 공학적 안전장치를 통해 공존할 수 있음을 배웠습니다. 전남대에서 음성 위변조를 판별하는 보이스 딥페이크 탐지 및 디지털 워터마킹 기술을 심화 탐구하겠습니다.",
+                highlights: ["라이선스 블록체인 스마트 컨트랙트를 도입", "AI 워터마크 삽입을 의무화", "보이스 딥페이크 탐지 및 디지털 워터마킹 기술"],
+                tailQuestion: "합성된 오디오 데이터에 인간의 청각으로는 들리지 않는 '비가청 워터마크'를 삽입하는 음향학적 원리는 무엇인가요?",
+                tailGuidance: "고주파수 대역이나 주파수 마스킹 임계값 이하의 미세 위상 변화 영역에 디지털 서명을 변조 주입하는 방식 설명",
+                tailHighlights: ["고주파수 대역이나 특정 주파수 마스킹 임계값 이하", "미세한 위상 변화 영역에 디지털 서명 신호를 변조 주입"],
+                tailScript: "인간의 청각 기관이 인지하지 못하는 고주파수 대역이나 특정 주파수 마스킹 임계값 이하의 미세한 위상 변화 영역에 디지털 서명 신호를 변조 주입하는 방식입니다."
+            },
+            {
+                qNum: "P2-04",
+                part: "PART2",
+                area: "1학년 진로활동",
+                title: "'인공지능과 딥러닝' 독서 후 초기 대화 시스템인 ELIZA의 패턴 매칭을 탐구했는데, 현대 LLM과의 기술적 패러다임 차이는 무엇인가요?",
+                source: "자연어 처리 발전 족보 및 규칙 기반 vs 신경망 차이 검증",
+                keywords: "규칙 기반(Rule-based), 데이터 기반 딥러닝, 경량화 언어 모델",
+                rawScript: "1960년대 개발된 ELIZA는 개발자가 사전에 수작업으로 입력한 키워드 분해 규칙과 문장 변환 템플릿에 따라 단순히 문장을 재구성하는 하드코딩된 '규칙 기반(Rule-based)' 시스템이었습니다. 반면 현대의 LLM은 규칙을 명시적으로 주지 않아도 대규모 텍스트 코퍼스로부터 단어 간의 다차원 확률 분포와 문맥적 주의 집중(Attention)을 스스로 학습하는 '데이터 기반(Data-driven) 딥러닝'이라는 근본적 차이가 있음을 분석했습니다. 인공지능이 인간의 정적 규칙을 모방하던 단계에서 데이터의 내재적 패턴을 스스로 추출하는 단계로의 거대한 도약을 확인했습니다. 전남대에서 최신 트랜스포머 아키텍처를 넘어 연산 효율을 극대화한 경량화 언어 모델을 연구하고 싶습니다.",
+                highlights: ["하드코딩된 '규칙 기반(Rule-based)' 시스템", "'데이터 기반(Data-driven) 딥러닝'이라는 근본적 차이", "연산 효율을 극대화한 경량화 언어 모델"],
+                tailQuestion: "ELIZA와 같은 규칙 기반 챗봇이 복잡한 문맥 대화에서 필연적으로 파탄 나는 이유는 무엇인가요?",
+                tailGuidance: "미리 정의되지 않은 단어, 복합 문맥, 반어법 등 예외 상황을 수용할 의미론적 일반화 능력 부재 설명",
+                tailHighlights: ["복합 문맥, 반어법과 같은 예외 상황", "의미론적 일반화 능력이 전혀 없기 때문"],
+                tailScript: "미리 정의되지 않은 단어나 복합 문맥, 반어법과 같은 예외 상황이 발생했을 때 이를 수용할 수 있는 의미론적 일반화 능력이 전혀 없기 때문입니다."
+            },
+            {
+                qNum: "P2-05",
+                part: "PART2",
+                area: "1학년 진로활동",
+                title: "'AI 2041'을 읽고 AI와 다른 직업의 융합을 통한 창직 활동에 참여했는데, 본인이 고안했던 융합 직업 아이디어는 무엇이었나요?",
+                source: "진로 독서 기반 융합 상상력 및 진로 로드맵 진실성 검증",
+                keywords: "피지컬 AI 상태 예지 엔지니어, 잔여 수명 예측, 예지 정비 AI",
+                rawScript: "물리적 기계 장치의 기구학적 마모를 센서로 예측하고 진단하는 '피지컬 AI 상태 예지 엔지니어'라는 융합 직무를 구상했습니다. 당시 공장 자동화 로봇이나 의료용 이송 장비가 고장 난 뒤 수리하는 사후 정비의 비효율성을 방지하기 위해, 진동과 전류 데이터를 실시간 학습하여 부품의 잔여 수명을 예측하는 직업의 미래성을 도출했습니다. 기술의 도입이 기존 일자리를 파괴하는 데 그치지 않고 더욱 안전하고 전문화된 신규 직무를 창출할 수 있음을 확신했습니다. 전남대 인공지능학부의 지능형 분산 시스템 및 기계 제어 인프라를 활용하여 산업 설비의 고장을 사전 방지하는 예지 정비 AI 모델을 실증하겠습니다.",
+                highlights: ["'피지컬 AI 상태 예지 엔지니어'", "진동과 전류 데이터를 실시간 학습하여 부품의 잔여 수명을 예측", "예지 정비 AI 모델을 실증"],
+                tailQuestion: "장비의 고장을 사전에 예측하는 예지보전(PdM) 모델에서 가장 널리 쓰이는 센서 데이터 유형은 무엇인가요?",
+                tailGuidance: "미세 균열과 마찰을 조기 포착하는 3축 진동 가속도 센서와 음향 방출(Acoustic Emission) 데이터 답변",
+                tailHighlights: ["3축 진동 가속도 센서", "음향 방출(Acoustic Emission) 데이터"],
+                tailScript: "회전체나 구동 모터의 미세한 이상 균열과 마찰을 가장 먼저 포착할 수 있는 3축 진동 가속도 센서와 음향 방출(Acoustic Emission) 데이터입니다."
+            },
+            {
+                qNum: "P2-06",
+                part: "PART2",
+                area: "1학년 과학탐구실험",
+                title: "'인공지능 맞춤형 학습과제 제시 시 학업 성취도 향상' 가설을 세우고 연역적 탐구를 설계했는데, 통제 변인과 조작 변인을 어떻게 설정했었나요?",
+                source: "기초 과학 탐구 설계 방법론 및 실험 설계 엄밀성 검증",
+                keywords: "통제·조작 변인 설계, t-검정 가설 검정, 교육용 경량 지능",
+                rawScript: "동일한 기초 학력을 가진 두 집단을 대상으로 하루 1시간의 자기주도학습 시간을 통제 변인으로 고정하고, 실험군에는 AI가 오답 취약 단원을 진단해 맞춤형 문항을 추천하고 대조군에는 일반 표준 문제집을 풀도록 조작 변인을 설계했습니다. 비록 고교 환경상 실제 학생들을 장기간 통제하여 완벽한 임상 데이터를 도출하진 못했으나, 사전·사후 표준화 평가를 통해 학업 성취도 향상 폭을 t-검정으로 유의미하게 검증하는 수리적 가설 검정 절차를 수립했습니다. 과학적 방법론이 교육 공학적 가설을 검증하는 강력한 논리 틀임을 체득했습니다. 전남대에서 맞춤형 피드백을 제공하는 교육용 경량 지능 알고리즘 설계로 역량을 확장해 보고 싶습니다.",
+                highlights: ["자기주도학습 시간을 통제 변인으로 고정", "t-검정으로 유의미하게 검증하는 수리적 가설 검정 절차", "교육용 경량 지능 알고리즘 설계"],
+                tailQuestion: "해당 실험 설계에서 발생할 수 있는 가장 큰 교란 변인(Confounding Variable)은 무엇인가요?",
+                tailGuidance: "개개인의 일일 학습 몰입도, 시험 당일 컨디션, 교사로부터 받은 개별 피드백의 질적 차이 답변",
+                tailHighlights: ["일일 학습 몰입도, 시험 당일의 건강 상태", "교사로부터 받은 개별 질문 피드백의 질적 차이"],
+                tailScript: "학생 개개인의 일일 학습 몰입도, 시험 당일의 건강 상태, 그리고 학교 수업 시간 중 교사로부터 받은 개별 질문 피드백의 질적 차이입니다."
+            },
+            {
+                qNum: "P2-07",
+                part: "PART2",
+                area: "1학년 과학탐구실험",
+                title: "그래핀의 육각형 벌집 구조를 발표했는데, 탄소 나노 물질의 구조적 특성이 미래 인공지능 반도체 하드웨어에 어떤 의미를 갖나요?",
+                source: "신소재 물리 특성과 차세대 AI 하드웨어 연계 검증",
+                keywords: "sp² 혼성 궤도, 실리콘 한계 돌파, 하드웨어 인식 최적화",
+                rawScript: "그래핀은 탄소 원자가 sp² 혼성 궤도로 육각형 평면을 이루어 전자 이동도가 실리콘의 100배 이상에 달하고 열전도율이 극도로 우수함을 화학 구조를 통해 증명했습니다. 당시에는 기초적인 결정 구조 발표에 집중했으나, 이후 딥러닝 연산량이 폭증함에 따라 기존 실리콘 반도체의 미세화 한계와 발열 문제를 돌파할 핵심 소재가 탄소 기반 나노 구조체임을 심화 학습했습니다. 소프트웨어 알고리즘의 발전은 이를 뒷받침하는 신소재 물리 하드웨어의 혁신과 맞물려야 함을 깨달았습니다. 전남대의 첨단 AI 융합 인프라 속에서 하드웨어 구조를 깊이 이해하는 고효율 알고리즘 최적화 전문가로 성장하겠습니다.",
+                highlights: ["전자 이동도가 실리콘의 100배 이상에 달하고 열전도율이 극도로 우수", "실리콘 반도체의 미세화 한계와 발열 문제를 돌파", "하드웨어 구조를 깊이 이해하는 고효율 알고리즘 최적화 전문가"],
+                tailQuestion: "그래핀이 뛰어난 전기 전도성을 가짐에도 불구하고 전통적인 디지털 컴퓨터 반도체 소자로 즉각 상용화되지 못하는 핵심 물리적 결함은 무엇인가요?",
+                tailGuidance: "전자 흐름을 완전히 차단하는 '밴드갭(Bandgap)' 부재로 온/오프 스위칭 제어가 어렵다는 점 설명",
+                tailHighlights: ["'밴드갭(Bandgap)'이 존재하지 않아", "온/오프(0과 1) 스위칭 제어가 어렵기 때문"],
+                tailScript: "전자의 흐름을 완전히 차단하는 '밴드갭(Bandgap)'이 존재하지 않아 트랜지스터의 핵심 기능인 온/오프(0과 1) 스위칭 제어가 어렵기 때문입니다."
+            },
+            {
+                qNum: "P2-08",
+                part: "PART2",
+                area: "2학년 자율활동",
+                title: "코넬 노트 필기법을 익혀 공강과 자율학습 시간을 관리했다고 기록되어 있는데, 코넬 노트의 3단 구조를 컴퓨터의 메모리 계층 구조와 비교 설명해 보세요.",
+                source: "자기주도 학습법의 시스템적 구조화 역량 평가",
+                keywords: "RAM·캐시·스토리지 매핑, 계층적 지식 인덱싱",
+                rawScript: "코넬 노트는 우측의 상세 필기 영역, 좌측의 핵심 키워드 단서 영역, 하단의 최종 요약 영역으로 구분되며, 이는 컴퓨터 시스템의 메모리 계층 구조와 매우 유사하게 작동합니다. 상세 필기 영역이 방대한 원시 데이터를 임시 저장하는 주 기억장치(RAM)라면, 좌측의 핵심 키워드는 빠른 탐색을 지원하는 캐시 메모리(Cache Tag)의 역할을 하고, 하단의 요약문은 정제된 핵심 지식을 영구 보존하는 디스크 스토리지와 같습니다. 자신의 지식을 계층적으로 정제하고 인덱싱하는 습관이 학습 속도를 배가시킴을 확인했습니다. 체계적인 지식 구조화 루틴을 바탕으로 전남대학교의 방대한 전공 지식을 빈틈없이 흡수하겠습니다.",
+                highlights: ["주 기억장치(RAM)", "캐시 메모리(Cache Tag)의 역할", "디스크 스토리지와 같습니다"],
+                tailQuestion: "코넬 노트법을 실제로 적용하면서 느꼈던 단점이나 비효율성은 무엇이었나요?",
+                tailGuidance: "수학 증명이나 긴 코드 흐름에서 칸 분리가 사고의 호흡을 끊어 유연하게 변형해 사용했다고 답변",
+                tailHighlights: ["단계적 흐름이 중요할 경우", "사고의 호흡을 끊는 한계가 있어 유연하게 변형"],
+                tailScript: "수업 내용이 수학 증명이나 긴 코드처럼 단계적 흐름이 중요할 경우, 좌측 키워드 칸과 우측 내용 칸을 기계적으로 분리하는 것이 오히려 사고의 호흡을 끊는 한계가 있어 유연하게 변형해 사용했습니다."
+            },
+            {
+                qNum: "P2-09",
+                part: "PART2",
+                area: "2학년 동아리활동",
+                title: "아스피린 합성 실험에서 물중탕 역할을 맡았는데, 화학 반응 속도론에서 온도를 직접 가열하지 않고 물중탕하는 물리화학적 이유는 무엇인가요?",
+                source: "기초 과학 실험 원리의 엄밀성 검증",
+                keywords: "국소적 과열 방지, 열평형 메커니즘, 가중치 정규화 비유",
+                rawScript: "살리실산과 아세트산 무수물의 에스테르화 반응 시 직접 불꽃을 가하면 국소적 과열로 인해 유기물이 탄화 분해되거나 휘발성 시약이 급격히 증발할 위험이 있어, 100도 이하의 온도를 균일하게 전달하는 물중탕이 필수적임을 실험으로 확인했습니다. 화학 반응계 전체에 열에너지를 균일하게 분산시켜 부산물 생성을 억제하고 정반응 수율을 극대화하는 열평형 메커니즘을 관찰했습니다. 극단적인 국소 과열을 방지하고 균일한 활성화 에너지를 유지하는 원리는, 딥러닝 학습 시 경사도가 특정 가중치에만 과도하게 쏠리지 않도록 조절하는 가중치 정규화(Weight Regularization)의 물리적 비유로 이해되었습니다. 정밀한 변인 통제 태도를 바탕으로 전남대에서 재현성 높은 공학 실험을 수행하겠습니다.",
+                highlights: ["100도 이하의 온도를 균일하게 전달하는 물중탕", "가중치 정규화(Weight Regularization)의 물리적 비유", "재현성 높은 공학 실험"],
+                tailQuestion: "아스피린 합성 수율을 높이기 위해 촉매로 주로 사용하는 물질은 무엇인가요?",
+                tailGuidance: "소량의 진한 인산(H₃PO₄)이나 진한 황산(H₂SO₄)을 산 촉매로 사용한다고 답변",
+                tailHighlights: ["소량의 진한 인산(H₃PO₄)이나 진한 황산(H₂SO₄)"],
+                tailScript: "반응 속도를 촉진하기 위해 소량의 진한 인산(H₃PO₄)이나 진한 황산(H₂SO₄)을 산 촉매로 사용합니다."
+            },
+            {
+                qNum: "P2-10",
+                part: "PART2",
+                area: "2학년 동아리활동",
+                title: "유전자 편집 기술 반대 토론에서 '새로운 독성 물질 탄생 및 질병 심화'를 논리적 근거로 제시했는데, 유전자 가위(CRISPR) 기술의 어떤 기술적 결함에 주목했었나요?",
+                source: "생명윤리 및 정밀 기술의 부작용 통찰력 검증",
+                keywords: "오프타깃 효과(Off-target), 0.1% 치명적 오차, 안전 최우선 공학도",
+                rawScript: "목표로 한 특정 염기서열 이외의 엉뚱한 비표적 염기서열을 절단하는 '오프타깃 효과(Off-target Effect)'가 발생할 경우, 세포 내 예기치 못한 돌연변이나 암 억제 유전자의 기능 상실을 초래할 수 있다는 분자생물학적 위험에 주목했습니다. 당시 토론에서는 유전자의 복잡한 상호작용 네트워크가 완전히 규명되지 않은 상태에서의 섣부른 편집이 생태계 전체의 유전적 다양성을 교란할 수 있음을 경고했습니다. 정밀해 보이는 기술이라도 단 0.1%의 오작동 확률이 시스템 전체를 붕괴시킬 수 있음을 깨달았습니다. 전남대에서 자율주행과 의료 비전 모델을 다룰 때 99.9%의 정확도 뒤에 숨은 치명적 오인식 오차를 끝까지 파고드는 안전 최우선 공학도가 되겠습니다.",
+                highlights: ["'오프타깃 효과(Off-target Effect)'", "단 0.1%의 오작동 확률이 시스템 전체를 붕괴", "안전 최우선 공학도"],
+                tailQuestion: "인공지능이 유전자 가위 기술의 오프타깃 효과를 줄이는 데 어떻게 기여할 수 있나요?",
+                tailGuidance: "딥러닝 서열 분석 모델로 잠재적 비표적 서열의 결합 에너지를 사전 예측해 최적 gRNA 서열 추천",
+                tailHighlights: ["잠재적 비표적 서열의 결합 에너지를 사전 예측", "최적의 gRNA 서열을 추천"],
+                tailScript: "딥러닝 서열 분석 모델을 통해 가이드 RNA(gRNA)와 결합할 수 있는 잠재적 비표적 서열의 결합 에너지를 사전 예측하여, 오프타깃 확률이 가장 낮은 최적의 gRNA 서열을 추천하는 것입니다."
+            },
+            {
+                qNum: "P2-11",
+                part: "PART2",
+                area: "2학년 진로활동",
+                title: "2025 AI·SW체험축전에서 프로그래밍으로 로봇을 제어하고 AI 사진 편집을 체험했는데, 단순 관람을 넘어 공학적으로 분석한 점은 무엇인가요?",
+                source: "행사 참여의 진실성 및 공학적 발전 계기 검증",
+                keywords: "물리적 지연·마찰 오차, 이미지 인페인팅, Sim-to-Real 제어",
+                rawScript: "축전 부스에서 작동하는 모바일 로봇이 초음파 센서 신호에 따라 모터를 구동할 때 발생하는 물리적 지연 시간과 바퀴의 미끄러짐 마찰로 인해 소프트웨어 명령어와 실제 하드웨어 궤적 간에 오차가 발생함을 관찰했습니다. 또한 생성형 AI 기반 사진 편집 도구가 인페인팅(Inpainting)을 수행할 때 주변 픽셀의 통계적 텍스처를 자연스럽게 메꾸는 합성곱 기반 생성 모델의 잠재력을 확인했습니다. 단순한 기술 소비자를 넘어 실제 물리 세계의 마찰력을 극복하는 피지컬 알고리즘을 짜고 싶다는 지적 갈증을 느꼈습니다. 전남대학교의 첨단 로보틱스 및 컴퓨터 비전 실습 환경 속에서 가상 시뮬레이션과 현실의 오차를 좁히는 제어 소프트웨어를 구현하겠습니다.",
+                highlights: ["소프트웨어 명령어와 실제 하드웨어 궤적 간에 오차가 발생", "인페인팅(Inpainting)", "가상 시뮬레이션과 현실의 오차를 좁히는 제어 소프트웨어"],
+                tailQuestion: "사진 편집 AI에서 이미지의 지워진 영역을 주변 배경과 어울리게 채워 넣는 대표적인 생성 모델 구조는 무엇인가요?",
+                tailGuidance: "생성적 적대 신경망(GAN)이나 노이즈를 점진적으로 제거하는 디퓨전(Diffusion) 모델 제시",
+                tailHighlights: ["생성적 적대 신경망(GAN)", "디퓨전(Diffusion) 모델"],
+                tailScript: "생성자와 판별자가 경쟁하며 사실적인 픽셀을 복원하는 생성적 적대 신경망(GAN)이나 노이즈를 점진적으로 제거해 나가는 디퓨전(Diffusion) 모델입니다."
+            },
+            {
+                qNum: "P2-12",
+                part: "PART2",
+                area: "2학년 진로활동",
+                title: "학과 멘토링에서 이공계가 아닌 '글로벌경제학과' 멘토 수업에 집중 참여한 특별한 이유가 있었나요?",
+                source: "비전공 멘토링 참여 배경 및 융합적 경제 감각 검증",
+                keywords: "비용 편익 구조, 공급망·제조 원가 분석, 전략적 AI 엔지니어",
+                rawScript: "아무리 뛰어난 인공지능과 로봇 기술이라도 거시경제적 시장 수요와 비용 편익 구조를 증명하지 못하면 상용화되지 못하고 연구실에만 갇히게 된다는 냉정한 현실을 직시했기 때문입니다. 글로벌 무역 환경에서 기술 표준의 패권과 환율, 공급망 변동이 첨단 반도체 및 하드웨어 제조 원가에 미치는 영향을 거시적 관점에서 파악하고자 멘토링에 집중했습니다. 공학자가 연구실의 수식에만 갇히지 않고 글로벌 시장의 경제적 역학을 이해할 때 비로소 파괴적 혁신을 이끌 수 있음을 배웠습니다. 전남대에서 기술적 완성도뿐만 아니라 비즈니스 타당성과 시장 경제성을 함께 고려하는 전략적 AI 엔지니어로 성장하겠습니다.",
+                highlights: ["거시경제적 시장 수요와 비용 편익 구조", "글로벌 시장의 경제적 역학을 이해", "전략적 AI 엔지니어"],
+                tailQuestion: "딥러닝 모델의 파라미터 크기 증가가 IT 기업의 경제적 수익성에 미치는 대표적인 위협 요소는 무엇인가요?",
+                tailGuidance: "초고가 GPU 인프라 구축 비용과 막대한 데이터센터 전력 유지비로 인한 운영 마진 악화 답변",
+                tailHighlights: ["초고가 GPU 인프라 구축 비용", "막대한 데이터센터 전력 유지비로 인한 운영 마진의 급격한 악화"],
+                tailScript: "모델 학습과 추론에 소모되는 초고가 GPU 인프라 구축 비용과 막대한 데이터센터 전력 유지비로 인한 운영 마진의 급격한 악화입니다."
+            },
+            {
+                qNum: "P2-13",
+                part: "PART2",
+                area: "2학년 진로활동",
+                title: "홀랜드 검사 결과 '탐구형(I)'으로 분석되었는데, 한 문제를 다양한 방식으로 접근하는 본인의 학습 태도가 수학에서 어떻게 발휘되었나요?",
+                source: "학습 메타인지 역량 및 수학적 탐구 태도 진실성 검증",
+                keywords: "최소 3가지 풀이 경로, 기하·대수·벡터 수렴, 알고리즘 앙상블",
+                rawScript: "단원 평가나 모의고사 난제를 풀 때 해설지의 단일 정석 풀이에 만족하지 않고, 기하학적 그래프 해석, 대수적 부등식 변형, 극한의 미분 근사 등 최소 3가지 이상의 풀이 경로를 비교하며 풀이 시간과 수리적 명쾌함을 분석했습니다. 예를 들어 공간도형 문제를 삼수선의 정리로 순수 기하학적으로 풀어낸 후, 좌표계에 올려 3차원 벡터 성분 연산으로 재검산하며 두 방식이 하나의 수학적 본질로 수렴함을 확인했습니다. 이러한 지적 집요함은 복잡한 데이터 문제에 직면했을 때 단일 모델에 의존하지 않고 다양한 알고리즘을 앙상블할 수 있는 공학적 밑천이 되었습니다. 전남대에서 복잡한 최적화 난제를 다각도의 수리 모델로 분해하고 해결하는 끈기 있는 연구자가 되겠습니다.",
+                highlights: ["최소 3가지 이상의 풀이 경로를 비교", "하나의 수학적 본질로 수렴함을 확인", "다양한 알고리즘을 앙상블할 수 있는 공학적 밑천"],
+                tailQuestion: "하나의 알고리즘 문제를 해결할 때 시간 효율성과 메모리 효율성이 상충(Trade-off)하는 대표적 사례는 무엇인가요?",
+                tailGuidance: "단순 재귀(메모리 절약/지수 시간 O(2ⁿ)) vs 메모이제이션 동적 계획법(배열 메모리 소모/선형 시간 O(n)) 비교",
+                tailHighlights: ["단순 재귀는 메모리를 아끼지만 시간 복잡도가 지수(O(2ⁿ))로 폭증", "동적 계획법은 배열 메모리를 추가 소모하는 대신 선형 시간(O(n))으로 단축"],
+                tailScript: "피보나치 수열을 구할 때 단순 재귀는 메모리를 아끼지만 시간 복잡도가 지수(O(2ⁿ))로 폭증하는 반면, 메모이제이션을 쓰는 동적 계획법은 배열 메모리를 추가 소모하는 대신 선형 시간(O(n))으로 단축시키는 것입니다."
+            },
+            {
+                qNum: "P2-14",
+                part: "PART2",
+                area: "3학년 진로 특강",
+                title: "'인공지능과 간호' 특강 후 환자 이송 보조 장치에 돌림힘과 지레의 원리를 적용하는 방안을 모색했는데, 구체적인 기구학적 설계 메커니즘은 무엇이었나요?",
+                source: "물리 역학 원리와 피지컬 헬스케어 AI 융합 검증",
+                keywords: "2종 지레 링크 구조, 로드셀(Load Cell), 능동형 토크 제어",
+                rawScript: "간호 인력의 근골격계 부상을 예방하기 위해 환자의 체중 중심(Center of Mass)과 회전축 사이의 모멘트 팔(Moment Arm) 거리를 줄여 시술자가 가해야 할 돌림힘(Torque)을 최소화하는 2종 지레 기반의 링크 구조를 구상했습니다. 여기에 관절부에 장착된 로드셀(Load Cell) 센서가 환자의 미세한 하중 이동을 감지하면 모터가 즉각 보조 토크를 보상하는 능동형 토크 제어 알고리즘의 결합을 모색했습니다. 고교 수준에서 정밀한 모터 제어 회로를 완벽히 제작하진 못했으나, 물리학의 정역학 방정식이 인간 중심 보조 기구 설계의 필수 언어임을 깨달았습니다. 전남대학교의 헬스케어 AI 및 생체 메카트로닉스 연구를 통해 간호 현장의 안전을 실질적으로 지키는 웨어러블 리프팅 장비를 개발하겠습니다.",
+                highlights: ["돌림힘(Torque)을 최소화하는 2종 지레 기반의 링크 구조", "능동형 토크 제어 알고리즘의 결합", "웨어러블 리프팅 장비"],
+                tailQuestion: "환자 이송 장치에서 급격한 가속이나 감속으로 인한 환자의 불안감을 줄이기 위해 모터 제어 시 고려해야 할 물리량은 무엇인가요?",
+                tailGuidance: "가속도의 시간 변화율인 '저크(Jerk, 가가속도)'를 최소화하는 부드러운 S-커브 궤적 설계 답변",
+                tailHighlights: ["'저크(Jerk, 가가속도)'를 최소화", "부드러운 S-커브 궤적으로 가감속"],
+                tailScript: "가속도의 시간에 따른 변화율인 '저크(Jerk, 가가속도)'를 최소화하여 모터가 부드러운 S-커브 궤적으로 가감속되도록 프로파일을 설계해야 합니다."
+            },
+            // PART 3: 15 Questions
+            {
+                qNum: "P3-01",
+                part: "PART3",
+                area: "센서 오차 방어",
+                title: "가속도 센서로 이동 궤적을 적분할 때 센서 자체의 노이즈 때문에 시간이 지날수록 위치 오차가 눈덩이처럼 커지는 '드리프트 현상'을 고교 수준에서 어떻게 해결했나요?",
+                source: "물리 센서의 본질적 한계 인식 및 보정 알고리즘 이해도 검증",
+                keywords: "드리프트 현상 인정, 영속도 보정(ZUPT), 확장 칼만 필터(EKF)",
+                rawScript: "저가형 가속도 센서의 미세한 바이어스(Bias) 전압이 두 번 적분되는 과정에서 시간에 비례해 위치 오차가 기하급수적으로 폭증하는 드리프트 현상을 확인하고 큰 기술적 벽에 부딪혔습니다. 고교 실습실의 단일 센서만으로는 장시간의 누적 오차를 수학적으로 완전히 제거할 수 없다는 한계를 솔직히 인정하고, 정지 상태를 감지할 때마다 속도를 강제로 0으로 리셋하는 '영속도 보정(ZUPT)' 기법을 논문에서 찾아 대안으로 제시했습니다. 단일 하드웨어의 한계를 소프트웨어적 조건문과 보정 알고리즘으로 극복하는 공학적 문제 해결의 묘미를 배웠습니다. 전남대에서 센서 융합과 확장 칼만 필터(EKF)를 심화 학습하여 자율주행 로봇의 고정밀 위치 추정 문제를 완벽히 해결하겠습니다.",
+                highlights: ["단일 센서만으로는 장시간의 누적 오차를 수학적으로 완전히 제거할 수 없다는 한계를 솔직히 인정", "'영속도 보정(ZUPT)' 기법", "확장 칼만 필터(EKF)"],
+                tailQuestion: "영속도 보정(ZUPT) 기법이 적용될 수 있는 실제 시스템 사례는 무엇인가요?",
+                tailGuidance: "신발 밑창 센서로 발이 땅에 닿는 디딤 단계마다 속도 오차를 0으로 초기화하는 보행자 관성 항법(PDR) 답변",
+                tailHighlights: ["보행자 관성 항법 시스템(PDR)"],
+                tailScript: "보행자의 신발 밑창에 센서를 부착하여 발이 땅에 닿는 디딤 단계마다 속도 오차를 0으로 초기화하는 보행자 관성 항법 시스템(PDR)입니다."
+            },
+            {
+                qNum: "P3-02",
+                part: "PART3",
+                area: "데이터 불균형 방어",
+                title: "생체 데이터나 결함 탐지 프로젝트에서 정상 데이터에 비해 이상 데이터가 극도로 적은 '클래스 불균형(Class Imbalance)' 문제를 어떻게 해결했나요?",
+                source: "현업 데이터 불균형 대처 역량 및 평가지표 이해도 평가",
+                keywords: "정확도의 역설, F1-Score 재정립, 비용 민감 학습",
+                rawScript: "수집한 데이터셋 중 정상 샘플이 95% 이상을 차지하여 모델이 모든 데이터를 단순히 정상으로 예측해도 95%의 높은 정확도가 나오는 '정확도의 역설'에 직면했음을 솔직히 고백합니다. 단순 정확도(Accuracy) 지표를 폐기하고, 소수 클래스의 검출 능력을 엄정히 평가하는 정밀도(Precision), 재현율(Recall), 그리고 이들의 조화평균인 F1-Score를 모델의 핵심 성능 평가지표로 재정립했습니다. 아울러 손실함수에서 소수 이상치 클래스의 오분류에 더 큰 가중치를 부여하는 비용 민감 학습(Cost-sensitive Learning)의 수리적 원리를 적용했습니다. 전남대에서 고난도 이상 탐지(Anomaly Detection)를 위한 Autoencoder 기반 준지도학습 모델을 깊이 연구하고 싶습니다.",
+                highlights: ["'정확도의 역설'에 직면했음을 솔직히 고백", "F1-Score를 모델의 핵심 성능 평가지표로 재정립", "비용 민감 학습(Cost-sensitive Learning)"],
+                tailQuestion: "소수 클래스 데이터에 단순히 가중치만 높였을 때 발생할 수 있는 부작용은 무엇인가요?",
+                tailGuidance: "정상 데이터를 이상 데이터로 잘못 오분류하는 '거짓 양성(False Positive, 1종 오류)' 급증 부작용 설명",
+                tailHighlights: ["'거짓 양성(False Positive, 1종 오류)'이 급격히 증가"],
+                tailScript: "모델이 소수 클래스 판정에 지나치게 민감해져 정상 데이터를 이상 데이터로 잘못 오분류하는 '거짓 양성(False Positive, 1종 오류)'이 급격히 증가할 수 있습니다."
+            },
+            {
+                qNum: "P3-03",
+                part: "PART3",
+                area: "과적합 방어",
+                title: "설계한 딥러닝 모델이 훈련 데이터에서는 99%의 높은 정확도를 기록했지만 검증 데이터에서 성능이 급락하는 '과적합(Overfitting)'이 발생했다면 어떻게 대처했나요?",
+                source: "모델 일반화 성능 확보 역량 및 정규화 기법 검증",
+                keywords: "드롭아웃(Dropout), L2 정규화, 얼리 스토핑(Early Stopping)",
+                rawScript: "훈련 손실은 지속적으로 감소하는데 검증 손실이 특정 에포크 이후 다시 상승하는 전형적인 과적합 곡선을 목격하고 모델이 데이터의 노이즈까지 암기했음을 진단했습니다. 파라미터 수가 지나치게 많은 신경망 계층을 단순화하고, 학습 중 무작위로 뉴런 연결을 차단하는 드롭아웃(Dropout) 비율을 0.3으로 설정했으며, 손실함수에 가중치 L2 정규화(Weight Decay)를 추가했습니다. 또한 검증 손실이 더 이상 감소하지 않을 때 자동으로 학습을 멈추는 얼리 스토핑(Early Stopping)을 파이프라인에 적용했습니다. 무조건 모델이 깊다고 좋은 것이 아니며, 적절한 복잡도와 일반화 성능의 균형을 맞추는 것이 진정한 딥러닝 엔지니어링임을 깨달았습니다. 전남대에서 모델 경량화와 일반화 최적화 기법을 체계적으로 연마하겠습니다.",
+                highlights: ["드롭아웃(Dropout) 비율을 0.3으로 설정", "가중치 L2 정규화(Weight Decay)를 추가", "얼리 스토핑(Early Stopping)"],
+                tailQuestion: "L1 정규화(Lasso)와 L2 정규화(Ridge)가 모델 가중치에 미치는 수학적 결과의 결정적 차이는 무엇인가요?",
+                tailGuidance: "L1은 불필요 가중치를 0으로 만들어 피처 선택을 유도하고, L2는 모든 가중치를 0에 가깝게 축소해 이상치 억제",
+                tailHighlights: ["L1 정규화는 중요도가 낮은 가중치를 완전히 0으로 만들어 희소 모델(피처 선택)을 유도", "L2 정규화는 모든 가중치를 0에 가깝게 골고루 축소"],
+                tailScript: "L1 정규화는 중요도가 낮은 가중치를 완전히 0으로 만들어 희소 모델(피처 선택)을 유도하고, L2 정규화는 모든 가중치를 0에 가깝게 골고루 축소하여 큰 이상치 가중치의 영향을 억제합니다."
+            },
+            {
+                qNum: "P3-04",
+                part: "PART3",
+                area: "비전 한계 방어",
+                title: "CNN 기반 이미지 패턴 인식을 생체 이미지에 적용했을 때 조명 변화나 피사체의 회전 변화에 모델이 취약하지 않았나요?",
+                source: "CNN의 공간적 한계 인식 및 데이터 보강 대처법 검증",
+                keywords: "회전·조명 취약성, 데이터 어그멘테이션, 공간 변환 신경망(STN)",
+                rawScript: "일반적인 CNN 구조가 평행 이동에는 강건하지만, 피사체가 급격히 회전하거나 조명의 명암 대비가 크게 바뀔 경우 특징 맵의 형태가 일그러져 분류 정확도가 현저히 하락하는 취약점을 분명히 확인했습니다. 고교 수준에서 새로운 회전 불변 신경망 레이어를 직접 발명할 수는 없었기에, 원본 이미지에 무작위 회전, 전단(Shear), 밝기 지터를 적용하는 데이터 어그멘테이션을 집중 수행하여 모델의 내성을 길렀습니다. 합성곱 계층의 구조적 한계를 인식하고 이를 데이터 엔지니어링으로 방어하는 현실적 타협점을 찾았습니다. 전남대 입학 후 유석봉 교수님 연구실의 선진 비전 복원 기술과 공간 변환 신경망(STN)을 학습하여 환경 변화에 흔들리지 않는 로버스트 비전 AI를 완성하겠습니다.",
+                highlights: ["원본 이미지에 무작위 회전, 전단(Shear), 밝기 지터를 적용하는 데이터 어그멘테이션", "공간 변환 신경망(STN)을 학습", "로버스트 비전 AI"],
+                tailQuestion: "CNN의 회전 취약성을 극복하기 위해 제프리 힌튼 교수가 제안했던 차세대 신경망 구조는 무엇인가요?",
+                tailGuidance: "객체의 위치·각도·크기 정보를 벡터 형태로 캡슐화하여 계층적 관계를 보존하는 '캡슐 신경망(Capsule Network)' 답변",
+                tailHighlights: ["'캡슐 신경망(Capsule Network)'"],
+                tailScript: "뉴런의 활성화 값뿐만 아니라 객체의 위치, 각도, 크기 정보를 담은 벡터 형태로 특징을 캡슐화하여 계층적 관계를 보존하는 '캡슐 신경망(Capsule Network)'입니다."
+            },
+            {
+                qNum: "P3-05",
+                part: "PART3",
+                area: "복잡도 압박",
+                title: "자율주행 경로 탐색 및 충돌 회피 알고리즘을 설계할 때 알고리즘의 시간 복잡도(Big-O)를 분석해 보았나요? 실시간 엣지 환경에서 병목이 생기지 않나요?",
+                source: "자료구조·알고리즘 계산 복잡도 및 실시간 시스템 제약 검증",
+                keywords: "O(N²) 병목, 쿼드트리(Quad-tree) 공간 분할, O(N log N) 단축",
+                rawScript: "장애물 수가 N개일 때 모든 장애물 쌍 간의 거리를 전수 조사하면 O(N²)의 시간 복잡도가 발생하여, 밀리초 단위로 급변하는 자율주행 엣지 제어기에서 연산 지연이 발생할 수 있음을 분석했습니다. 고교 탐구 단계에서는 고성능 GPU 서버 환경을 직접 구축하진 못했으나, 공간을 격자 단위로 분할하여 인접 구역의 장애물만 선택적으로 탐색하는 쿼드트리(Quad-tree) 공간 분할을 적용하면 시간 복잡도를 O(N log N) 수준으로 대폭 낮출 수 있음을 수리적으로 도출했습니다. 공학적 알고리즘의 우수성은 정답을 도출하는 것뿐만 아니라 주어진 하드웨어 제약 시간 내에 연산을 마칠 수 있는가에 달려 있음을 배웠습니다. 전남대에서 고급 자료구조와 병렬 컴퓨팅(CUDA)을 이수하여 초저지연 실시간 판단 시스템을 구현하겠습니다.",
+                highlights: ["쿼드트리(Quad-tree) 공간 분할을 적용", "시간 복잡도를 O(N log N) 수준으로 대폭 낮출 수 있음을 수리적으로 도출", "초저지연 실시간 판단 시스템"],
+                tailQuestion: "2차원 공간 분할에 쿼드트리를 쓴다면, 3차원 라이다(LiDAR) 포인트 클라우드 데이터를 공간 분할할 때 주로 쓰는 자료구조는 무엇인가요?",
+                tailGuidance: "8개 자식 노드로 재귀 분할하는 '옥트리(Octree)'나 다차원 이진 탐색 트리 'k-d 트리' 제시",
+                tailHighlights: ["'옥트리(Octree)'", "'k-d 트리(k-d Tree)'"],
+                tailScript: "공간을 8개의 자식 노드로 재귀 분할하는 '옥트리(Octree)'나 다차원 이진 탐색 트리인 'k-d 트리(k-d Tree)'를 주로 사용합니다."
+            },
+            {
+                qNum: "P3-06",
+                part: "PART3",
+                area: "최적화 실패 압박",
+                title: "경사하강법을 탐구했다고 했는데, 손실함수의 미분값이 0이 되는 '새들 포인트(Saddle Point, 안장점)'에 갇히는 문제는 어떻게 방어할 수 있나요?",
+                source: "고차원 최적화 이론의 수학적 깊이 및 해결책 검증",
+                keywords: "안장점(Saddle Point), 모멘텀(Momentum) 관성, Adam 옵티마이저",
+                rawScript: "고차원 신경망 공간에서는 모든 방향의 기울기가 0이 되면서 일부 방향은 극대이고 일부 방향은 극소가 되는 안장점에 갇혀 학습이 정체되는 현상이 흔히 발생함을 이론적으로 정립했습니다. 단순 경사하강법(GD)은 기울기가 0인 지점에서 가중치 갱신이 멈추지만, 이전 단계의 운동량을 관성으로 반영하는 모멘텀(Momentum) 기법이나 학습률을 파라미터별로 적응적으로 조절하는 Adam 옵티마이저를 적용하면 안장점을 탈출할 수 있음을 확인했습니다. 미적분의 순간 변화율 이론이 실제 딥러닝 옵티마이저의 관성 수식으로 진화하는 메커니즘을 통찰했습니다. 전남대 공학수학 및 수치최적화 과목을 통해 비볼록(Non-convex) 최적화의 난제를 푸는 정밀한 수리 역량을 쌓겠습니다.",
+                highlights: ["이전 단계의 운동량을 관성으로 반영하는 모멘텀(Momentum) 기법", "Adam 옵티마이저를 적용하면 안장점을 탈출", "비볼록(Non-convex) 최적화의 난제"],
+                tailQuestion: "Adam 옵티마이저가 내부적으로 결합하고 있는 대표적인 두 가지 최적화 기법은 무엇인가요?",
+                tailGuidance: "과거 그래디언트 지수 이동 평균 '모멘텀(Momentum)'과 학습률 적응 조절 'RMSProp' 융합 답변",
+                tailHighlights: ["'모멘텀(Momentum)'", "'RMSProp'을 융합"],
+                tailScript: "과거 그래디언트의 지수 이동 평균을 이용하는 '모멘텀(Momentum)'과 그래디언트 제곱의 이동 평균으로 학습률을 적응 조절하는 'RMSProp'을 융합한 것입니다."
+            },
+            {
+                qNum: "P3-07",
+                part: "PART3",
+                area: "XAI 한계 방어",
+                title: "설명 가능한 AI로 언급한 Grad-CAM은 해상도가 거칠어 미세한 의료 병변 경계를 명확히 설명하지 못하는 한계가 있는데, 이를 알고 있었나요?",
+                source: "XAI 기술의 공학적 한계 및 차세대 기술 인지도 검증",
+                keywords: "공간 해상도 손실 인정, Guided Grad-CAM, SHAP 섀플리 값",
+                rawScript: "Grad-CAM이 CNN의 마지막 합성곱 계층 특징 맵을 활용하기 때문에 수차례의 다운샘플링 과정에서 공간 해상도가 크게 손실되어 뭉뚱그려진 히트맵만을 출력한다는 명확한 기술적 한계를 정확히 인지하고 있습니다. 이러한 조잡한 국소화(Coarse Localization) 한계로 인해 미세한 픽셀 단위 침윤을 파악해야 하는 정밀 의료 진단에서는 보조적 지표로만 활용되어야 함을 확인했습니다. 이를 극복하기 위해 고해상도 하위 계층의 정보를 가이드 역전파와 결합하는 Guided Grad-CAM이나 픽셀별 기여도를 엄밀히 계산하는 섀플리 값 기반의 SHAP 기법을 병행 검토했습니다. 설명 가능성 도구조차도 맹신하지 않고 수리적 해상도 한계를 비판적으로 검토하는 안목을 길렀습니다. 전남대에서 고해상도 의료 영상 판독을 위한 차세대 정밀 XAI 프레임워크를 개발하고 싶습니다.",
+                highlights: ["공간 해상도가 크게 손실되어 뭉뚱그려진 히트맵만을 출력한다는 명확한 기술적 한계", "Guided Grad-CAM이나 픽셀별 기여도를 엄밀히 계산하는 섀플리 값 기반의 SHAP 기법", "차세대 정밀 XAI 프레임워크"],
+                tailQuestion: "픽셀 단위로 신경망의 입력 기여도를 분해하는 LRP(Layer-wise Relevance Propagation)의 기본 보존 법칙은 무엇인가요?",
+                tailGuidance: "역전파 시 각 레이어에서 뉴런 기여도의 총합이 항상 보존되어야 한다는 '적분 보존 법칙' 답변",
+                tailHighlights: ["각 레이어에서 뉴런 기여도의 총합이 항상 보존되어야 한다는 '적분 보존 법칙'"],
+                tailScript: "출력 계층의 최종 점수가 각 뉴런을 거쳐 입력 계층으로 역전파될 때, 각 레이어에서 뉴런 기여도의 총합이 항상 보존되어야 한다는 '적분 보존 법칙'입니다."
+            },
+            {
+                qNum: "P3-08",
+                part: "PART3",
+                area: "소프트 로봇 한계 방어",
+                title: "소프트 로봇의 비선형 움직임을 AI로 제어하겠다고 했는데, 고분자 인공 근육의 '재료 피로도'나 온도 변화에 따른 물리적 물성 변화는 AI 모델로 어떻게 반영할 것인가요?",
+                source: "소프트 로보틱스 물성 한계 및 적응형 제어 이론 검증",
+                keywords: "비선형 히스테리시스, 적응형 칼만 필터, 온라인 강화학습",
+                rawScript: "인공 근육에 사용되는 형상기억합금이나 실리콘 액추에이터는 반복 구동 시 열 축적과 재료 피로도로 인해 동일한 전압을 인가해도 수축률이 달라지는 극심한 비선형 히스테리시스(Hysteresis) 현상을 겪는다는 점을 분석했습니다. 고교 재학 중 실제 복잡한 열역학 모델 전체를 수식화하진 못했으나, 온도 센서와 변위 센서 데이터를 상태 변수로 추가 피드백하고 시간에 따른 모델 파라미터의 변류를 실시간 보정하는 적응형 칼만 필터 및 온라인 강화학습의 필요성을 도출했습니다. 인공지능이 완벽한 마법이 아니며, 하드웨어의 재료물리학적 노화 특성을 제어 수식에 끊임없이 업데이트해야 함을 배웠습니다. 전남대학교의 첨단 소프트 로봇 및 제어 연구실에서 재료 역학과 딥러닝이 융합된 고신뢰성 제어기를 설계하겠습니다.",
+                highlights: ["극심한 비선형 히스테리시스(Hysteresis) 현상", "적응형 칼만 필터 및 온라인 강화학습의 필요성", "재료 역학과 딥러닝이 융합된 고신뢰성 제어기"],
+                tailQuestion: "시스템의 입력 이력에 따라 출력이 비선형적으로 달라지는 '히스테리시스(Hysteresis)' 루프를 보정하기 위해 사용하는 전통적 수학 모델은 무엇인가요?",
+                tailGuidance: "비선형 이력 곡선을 근사하는 '프라이자흐(Preisach) 모델'이나 '프란틀-이슐린스키 모델' 제시",
+                tailHighlights: ["'프라이자흐(Preisach) 모델'", "'프란틀-이슐린스키(Prandtl-Ishlinskii) 모델'"],
+                tailScript: "압전 소자 및 형상기억합금의 비선형 이력 곡선을 근사하는 '프라이자흐(Preisach) 모델'이나 '프란틀-이슐린스키(Prandtl-Ishlinskii) 모델'입니다."
+            },
+            {
+                qNum: "P3-09",
+                part: "PART3",
+                area: "하드웨어 제약 방어",
+                title: "온디바이스 AI 환경에서 모델을 양자화(Quantization)하면 연산 속도는 빨라지지만 필연적으로 정확도가 떨어지는 트레이드오프가 발생하는데, 이를 어떻게 조율할 것인가요?",
+                source: "엣지 컴퓨팅 하드웨어 자원 최적화 및 양자화 기법 검증",
+                keywords: "양자화 인식 학습(QAT), 1% 이내 성능 방어, NPU 초경량 알고리즘",
+                rawScript: "32비트 부동소수점(FP32) 가중치를 8비트 정수(INT8)로 변환하는 양자화 과정에서 가중치 반올림 오차로 인해 미세한 추론 정확도 하락이 불가피함을 파악했습니다. 무분별한 사후 양자화(PTQ)를 적용하기보다, 모델 학습 단계에서 양자화로 인한 손실을 가중치 업데이트에 미리 반영하는 '양자화 인식 학습(QAT)'을 도입하면 성능 저하를 1% 이내로 방어하면서 메모리를 4분의 1로 줄일 수 있음을 확인했습니다. 공학의 핵심은 무제한의 자원이 아닌, 제한된 메모리와 배터리 환경 속에서 최적의 효율을 뽑아내는 타협점을 설계하는 데 있음을 절감했습니다. 전남대에서 NPU(신경망처리장치)에 최적화된 초경량 온디바이스 AI 알고리즘을 전문적으로 연구하고 싶습니다.",
+                highlights: ["'양자화 인식 학습(QAT)'을 도입", "성능 저하를 1% 이내로 방어하면서 메모리를 4분의 1로 줄일 수 있음", "초경량 온디바이스 AI 알고리즘"],
+                tailQuestion: "양자화(Quantization)와 함께 모델 크기를 줄이기 위해 널리 쓰이는 '지식 증류(Knowledge Distillation)'의 원리는 무엇인가요?",
+                tailGuidance: "큰 교사(Teacher) 모델의 소프트 타깃 확률 분포를 작은 학생(Student) 모델이 모방 학습하는 기법 설명",
+                tailHighlights: ["교사(Teacher) 모델이 출력하는 소프트 타깃 확률 분포를 가볍고 작은 학생(Student) 모델이 모방"],
+                tailScript: "크고 복잡한 교사(Teacher) 모델이 출력하는 소프트 타깃 확률 분포를 가볍고 작은 학생(Student) 모델이 모방하여 학습함으로써 작은 모델의 성능을 유지하는 기법입니다."
+            },
+            {
+                qNum: "P3-10",
+                part: "PART3",
+                area: "코드 오류 윤리 판단",
+                title: "학술제나 경진대회 발표 1시간 전, 본인이 개발한 모델의 코드에 치명적인 데이터 누수(Data Leakage) 오류가 있어 성능이 비정상적으로 높게 측정된 것을 발견했다면 어떻게 행동할 것인가요?",
+                source: "공학자로서의 정직성, 연구 윤리 및 위기 대처 역량 평가",
+                keywords: "즉시 솔직 보고, 데이터 오염 공개, 정직한 성능 재평가",
+                rawScript: "찰나의 거짓으로 우수한 평가를 받는 것보다 공학적 진실성을 지키는 것이 연구자의 생명과도 같으므로, 그 사실을 숨기지 않고 심사위원과 지도 선생님께 즉시 솔직하게 보고하겠습니다. 오류가 발생한 지점(훈련셋과 테스트셋의 데이터 오염)을 투명하게 공개하고, 제한된 1시간 동안 즉시 올바른 데이터셋으로 재평가한 실제 정직한 성능 수치를 발표 자료에 투명하게 반영하겠습니다. 잘못된 수치를 기반으로 한 시스템은 실제 현장에서 참사를 부를 수 있기에 정직성이 모든 기술적 우수성에 선행한다는 철학을 지키겠습니다. 어떠한 압박 속에서도 타협하지 않는 연구 윤리를 전남대학교 인공지능학부에서도 변함없이 실천하겠습니다.",
+                highlights: ["심사위원과 지도 선생님께 즉시 솔직하게 보고", "실제 정직한 성능 수치를 발표 자료에 투명하게 반영", "정직성이 모든 기술적 우수성에 선행"],
+                tailQuestion: "머신러닝 데이터 전처리 과정에서 '데이터 누수(Data Leakage)'가 발생하는 가장 대표적인 실수는 무엇인가요?",
+                tailGuidance: "전체 데이터셋에 먼저 정규화(Scaling)나 결측치 대체를 수행한 뒤 훈련·테스트셋을 분할하는 실수 답변",
+                tailHighlights: ["전체 데이터셋에 대해 먼저 정규화(Scaling)나 결측치 대체를 수행한 후 훈련셋과 테스트셋을 분할"],
+                tailScript: "교차 검증 시 전체 데이터셋에 대해 먼저 정규화(Scaling)나 결측치 대체를 수행한 후 훈련셋과 테스트셋을 분할하여, 테스트셋의 정보가 훈련 과정에 스며들게 만드는 실수입니다."
+            },
+            {
+                qNum: "P3-11",
+                part: "PART3",
+                area: "협업 충돌 상황 판단",
+                title: "마감 직전 팀원이 깃허브(GitHub) 브랜치를 강제 푸시(Force Push)하여 본인이 며칠간 작성한 핵심 알고리즘 코드가 덮어쓰기되어 유실되었다면 어떻게 대처할 것인가요?",
+                source: "버전 관리 이해도, 위기 대응력 및 정서적 안정성 평가",
+                keywords: "git reflog 커밋 복원, 보호 브랜치(Protected Branch) 설정",
+                rawScript: "감정적으로 팀원을 질책하기에 앞서, 깃(Git) 시스템의 내부 커밋 기록을 조회하는 `git reflog` 명령어를 즉시 가동하여 원격 저장소에서 덮어쓰기되기 이전의 로컬 커밋 해시값을 찾아 안전하게 브랜치를 복원하겠습니다. 코드 복구를 완료한 후에는 유사한 사고의 재발을 방지하기 위해 메인 브랜치에 직접 푸시를 차단하고 풀 리퀘스트(PR)와 최소 1인의 코드 리뷰를 거쳐야만 병합되도록 깃허브 보호 브랜치(Protected Branch) 규칙을 설정하겠습니다. 기술적 문제 해결과 시스템적 안전장치 구축을 통해 조직의 위기를 성숙하게 극복하는 태도를 견지하겠습니다. 이러한 시스템적 사고방식을 바탕으로 전남대에서 대규모 오픈소스 팀 프로젝트를 안정적으로 이끌겠습니다.",
+                highlights: ["`git reflog` 명령어를 즉시 가동하여 로컬 커밋 해시값을 찾아 안전하게 브랜치를 복원", "깃허브 보호 브랜치(Protected Branch) 규칙을 설정", "시스템적 안전장치 구축"],
+                tailQuestion: "협업 시 팀원 간 코드 스타일 차이로 인한 불필요한 충돌을 방지하기 위해 자동화할 수 있는 도구는 무엇인가요?",
+                tailGuidance: "린터(Flake8, Black)를 Git Pre-commit Hook에 연동해 자동 정렬하는 방식 답변",
+                tailHighlights: ["린터(Linter)인 Flake8이나 Black을 Git Commit 훅(Pre-commit Hook)에 연동"],
+                tailScript: "코드 스타일 규격을 일관되게 강제하는 린터(Linter)인 Flake8이나 Black을 Git Commit 훅(Pre-commit Hook)에 연동하여 자동 정렬하는 방식입니다."
+            },
+            {
+                qNum: "P3-12",
+                part: "PART3",
+                area: "무임승차 상황 판단",
+                title: "팀 프로젝트 중 코딩 능력이 현저히 부족하여 맡은 기능을 구현하지 못하고 회의 참여도 저조한 팀원이 있다면 리더로서 어떻게 해결할 것인가요?",
+                source: "포용적 리더십 및 팀 생산성 최적화 역량 평가",
+                keywords: "개별 면담 경청, 라벨링·테스트 케이스 재할당, 포용적 협업",
+                rawScript: "해당 팀원을 배척하거나 무조건적인 비난을 가하기보다, 개별 면담을 통해 그 팀원이 직면한 심리적 위축감과 구체적인 기술적 병목이 무엇인지 경청하겠습니다. 고난도 신경망 구현 대신 학습 데이터셋 라벨링 검수, 사용자 인터뷰 시나리오 작성, 테스트 케이스 실행 및 버그 리포트 작성 등 팀원의 눈높이에 맞으면서도 프로젝트에 필수적인 모듈을 재할당하겠습니다. 팀의 성공은 낙오자를 만드는 것이 아니라 구성원 각자의 강점을 최대치로 이끌어내어 시너지를 내는 데 있음을 잘 알고 있습니다. 전남대학교의 다양한 다학제 팀 프로젝트에서도 소외되는 동료 없이 모두가 기여하는 포용적 협업 문화를 만들겠습니다.",
+                highlights: ["개별 면담을 통해 심리적 위축감과 구체적인 기술적 병목이 무엇인지 경청", "팀원의 눈높이에 맞으면서도 프로젝트에 필수적인 모듈을 재할당", "포용적 협업 문화"],
+                tailQuestion: "팀 프로젝트에서 모든 팀원의 기여도를 투명하게 관리하기 위해 도입할 수 있는 애자일(Agile) 관리 도구는 무엇인가요?",
+                tailGuidance: "칸반 보드 기반 지라(Jira), 노션, 깃허브 이슈를 활용한 작업 카드 및 진행 상태 실시간 시각화 답변",
+                tailHighlights: ["칸반 보드(Kanban Board) 기반의 지라(Jira)나 노션, 깃허브 이슈(Issues)"],
+                tailScript: "칸반 보드(Kanban Board) 기반의 지라(Jira)나 노션, 깃허브 이슈(Issues)를 활용하여 작업 카드를 생성하고 작업 진행 상태를 실시간 시각화하는 것입니다."
+            },
+            {
+                qNum: "P3-13",
+                part: "PART3",
+                area: "지식 지적 압박 대응",
+                title: "\"지원자가 세특에 기록한 최적화 알고리즘 탐구 내용 중 OO 개념은 실제 산업 수학 이론과 다소 차이가 있는데, 본인이 잘못 이해하고 쓴 것 아닌가요?\"라는 면접관의 지적을 받는다면?",
+                source: "지적 겸손성, 정직한 인정 및 즉각적 메타인지 전환력 검증",
+                keywords: "겸허한 한계 인정, 수렴·특이점 조건 미고려 설명, 공학수학 보완",
+                rawScript: "교수님의 날카로운 지적에 깊이 감사드리며, 고교 재학 중 단편적인 학술 자료를 바탕으로 탐구하는 과정에서 해당 개념의 엄밀한 수학적 한계 조건을 충분히 짚어내지 못했음을 겸허히 인정합니다. 당시 저는 해당 개념의 핵심 직관을 실생활 현상과 연결하는 데 집중하다 보니 산업 수학에서 요구하는 엄밀한 수렴 정리나 특이점(Singularity) 조건을 미처 고려하지 못했습니다. 지적받은 빈틈은 교수님의 피드백을 계기로 제 탐구의 깊이를 한 차원 끌어올릴 수 있는 소중한 배움의 기회라고 생각합니다. 전남대학교 인공지능학부에 입학하여 공학수학과 알고리즘 분석 기초 과목을 철저히 이수함으로써 개념적 엄밀성을 완벽히 보완하겠습니다.",
+                highlights: ["엄밀한 수학적 한계 조건을 충분히 짚어내지 못했음을 겸허히 인정", "제 탐구의 깊이를 한 차원 끌어올릴 수 있는 소중한 배움의 기회", "개념적 엄밀성을 완벽히 보완"],
+                tailQuestion: "자신의 오류를 지적받았을 때 공학자가 가장 경계해야 할 태도는 무엇인가요?",
+                tailGuidance: "기존 가설이나 선입견에 매몰되어 명백한 반증 데이터를 부인하는 확증 편향적 태도 답변",
+                tailHighlights: ["명백한 반증 데이터를 부인하거나 논리적 방어에만 급급한 확증 편향적 태도"],
+                tailScript: "자신의 기존 가설이나 잘못된 선입견에 매몰되어 명백한 반증 데이터를 부인하거나 논리적 방어에만 급급한 확증 편향적 태도입니다."
+            },
+            {
+                qNum: "P3-14",
+                part: "PART3",
+                area: "수리 깊이 압박 검증",
+                title: "고교생이 인공신경망의 역전파(Backpropagation)를 이해했다고 썼는데, 실제 행렬 미분의 연쇄법칙(Chain Rule)과 전치행렬 연산을 직접 손으로 유도해 본 적이 있나요?",
+                source: "서류 진실성 극단 압박 및 역전파 수리 메커니즘 검증",
+                keywords: "스칼라 연쇄법칙 직접 증명, 고차원 텐서 한계 인정, 다변수미적분 정복",
+                rawScript: "고교 교육과정의 합성함수 미분법을 바탕으로 2개 은닉층을 가진 단순 다층 퍼셉트론(MLP)의 스칼라 단위 편미분 연쇄법칙은 오차 역전파 과정을 직접 손으로 증명하며 유도했습니다. 다만 실제 대규모 신경망에서 배치 연산을 위해 처리하는 다차원 야코비안(Jacobian) 행렬 미분과 텐서 전치 연산 전체를 완벽한 고차원 선형대수로 증명하기에는 고교 수학 범위를 넘어서는 한계가 있었음을 솔직히 밝힙니다. 비록 완전한 고차원 텐서 유도는 아니었지만, 출력 오차가 합성함수의 도함수 곱으로 거꾸로 전파되며 각 계층의 가중치를 갱신하는 기본 원리를 수학적으로 명확히 체득했습니다. 전남대 입학 후 선형대수학과 다변수미적분학을 이수하여 텐서 기반의 심화 역전파 연산 메커니즘을 완전무결하게 정복하겠습니다.",
+                highlights: ["스칼라 단위 편미분 연쇄법칙은 오차 역전파 과정을 직접 손으로 증명하며 유도", "고교 수학 범위를 넘어서는 한계가 있었음을 솔직히 밝힙니다", "텐서 기반의 심화 역전파 연산 메커니즘을 완전무결하게 정복"],
+                tailQuestion: "역전파 과정에서 은닉층의 오차를 이전 계층으로 전달할 때 가중치 행렬을 전치(Transpose)하여 곱하는 이유는 무엇인가요?",
+                tailGuidance: "순전파 시 결합된 차원 입출력 관계를 역방향으로 맞추어 이전 계층 뉴런의 원래 차원 크기로 그래디언트를 사상하기 위함",
+                tailHighlights: ["순전파(Forward) 시 행렬 곱으로 결합되었던 차원의 입출력 관계를 역방향으로 맞추어", "원래 차원 크기와 동일한 형태의 그래디언트를 역으로 사상"],
+                tailScript: "순전파(Forward) 시 행렬 곱으로 결합되었던 차원의 입출력 관계를 역방향으로 맞추어, 이전 계층 뉴런의 원래 차원 크기와 동일한 형태의 그래디언트를 역으로 사상하기 위함입니다."
+            },
+            {
+                qNum: "P3-15",
+                part: "PART3",
+                area: "전공 적합성 최종 압박",
+                title: "생기부를 보면 기계, 로봇, 의료, 소프트웨어 등 관심사가 계속 바뀌어 왔는데, 컴퓨터공학과가 아닌 굳이 '인공지능학부'여야만 하는 이유는 무엇인가요?",
+                source: "전공 정체성 압박 및 학과 선택의 독보적 필연성 증명",
+                keywords: "궁극적 엔진 수렴, 지능형 알고리즘 전문 요람, AI+X 실전 인재",
+                rawScript: "기계와 로봇, 의료 생체 신호를 두루 탐구한 궤적은 관심사가 방황한 것이 아니라, 현실의 복잡한 물리 시스템을 혁신할 수 있는 궁극의 엔진이 바로 '인공지능'이라는 확신을 찾아가는 수렴의 과정이었습니다. 전통적인 컴퓨터공학과가 컴퓨팅 인프라와 범용 소프트웨어 전반을 폭넓게 다룬다면, 전남대학교 인공지능학부는 수학적 기계학습 원리부터 딥러닝 비전, 피지컬 AI 응용에 이르기까지 지능형 알고리즘 자체를 가장 깊이 있게 파고들 수 있는 유일한 전문 요람이기 때문입니다. 분산된 공학 기술을 인간 중심의 지능형 시스템으로 통합하는 최고의 AI 엔지니어가 되기 위해 전남대 인공지능학부를 단 하나의 목표로 선택했습니다. 입학 후 융합적 배경을 밑거름 삼아 전남대학교의 특화 AI+X 트랙에서 대체 불가능한 실전 인재로 거듭나겠습니다.",
+                highlights: ["궁극의 엔진이 바로 '인공지능'이라는 확신을 찾아가는 수렴의 과정", "지능형 알고리즘 자체를 가장 깊이 있게 파고들 수 있는 유일한 전문 요람", "특화 AI+X 트랙에서 대체 불가능한 실전 인재"],
+                tailQuestion: "컴퓨터 소프트웨어 전공과 인공지능 전공의 가장 핵심적인 학문적 접근법 차이는 무엇인가요?",
+                tailGuidance: "소프트웨어는 명시적 결정론적 규칙과 아키텍처 설계, 인공지능은 데이터로부터 확률적·수학적 패턴을 학습하는 최적화 모델 구축",
+                tailHighlights: ["명시적인 결정론적 규칙과 시스템 아키텍처를 안정적으로 설계", "데이터로부터 확률적·수학적 패턴을 스스로 학습하는 최적화 모델을 구축"],
+                tailScript: "소프트웨어 전공이 명시적인 결정론적 규칙과 시스템 아키텍처를 안정적으로 설계하는 데 방점이 있다면, 인공지능 전공은 데이터로부터 확률적·수학적 패턴을 스스로 학습하는 최적화 모델을 구축하는 데 방점이 있습니다."
+            },
+            {
+                qNum: "FINAL",
+                part: "GUIDE",
+                area: "사각지대 최종 지침",
+                title: "최고 수석 컨설턴트의 사각지대 최종 방어 지침 (A+ 등급 쟁취 비결)",
+                source: "척추(버전 1) + 철통 방패(버전 2) + 0.5초 호흡 정적",
+                keywords: "0.5초 정적, 한계 인정 후 성장형 서사 매듭, A+ 최고 등급",
+                rawScript: "1) [버전 1: 필수 마스터 편]의 22문항이 면접의 합격을 결정하는 탄탄한 '척추'라면, 본 [버전 2: 지엽·기습 방어 편]의 42문항은 단 한 번의 당황으로 과락(F)을 유발할 수 있는 사각지대를 막아내는 '철통 방패'입니다. 2) 압박 질문이나 지엽적인 꼬리질문이 들어왔을 때 가장 중요한 것은 0.5초의 정적 후 '네, 교수님. 그 부분에 대해 말씀드리겠습니다'라며 호흡을 가다듬고 솔직하게 운을 떼는 차분한 발화 태도입니다. 3) 자신의 고교 시절 탐구 한계를 당당히 인정하고, 그것을 전남대학교 인공지능학부의 첨단 교육과정을 통해 어떻게 채워 나갈지 '성장형 서사'로 매듭짓는다면, 면접관들은 지원자에게 '매우 우수(A+)'의 최고 등급을 부여할 것입니다!",
+                highlights: ["과락(F)을 유발할 수 있는 사각지대를 막아내는 '철통 방패'", "0.5초의 정적 후", "'성장형 서사'로 매듭짓는다면", "'매우 우수(A+)'의 최고 등급"],
+                isOverview: true
+            }
+        ];
+
+        let filteredModules = [...modulesData];
+        let currentSubIndex = 0;
+        let revealStep = 0;
+        let isRevealAllMode = false;
+
+        function formatScriptWithHighlights(scriptText, highlights) {
+            if (!highlights || highlights.length === 0) return scriptText;
+            let formatted = scriptText;
+            highlights.forEach(phrase => {
+                const escapedPhrase = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const regex = new RegExp(`(${escapedPhrase})`, 'g');
+                formatted = formatted.replace(regex, `<span class="highlight-keyword">$1</span>`);
+            });
+            return formatted;
+        }
+
+        function filterCards(partFilter) {
+            // Update button active styles
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.filter === partFilter) {
+                    btn.className = "filter-btn bg-amber-600 text-white px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition shadow-lg shadow-amber-600/20";
+                } else {
+                    btn.className = "filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 px-4 py-2 rounded-xl text-xs md:text-sm font-bold transition";
+                }
+            });
+
+            if (partFilter === 'ALL') {
+                filteredModules = [...modulesData];
+            } else {
+                filteredModules = modulesData.filter(m => m.part === partFilter || m.part === 'GUIDE');
+            }
+            renderCardsGrid();
+        }
+
+        function renderCardsGrid() {
+            const gridEl = document.getElementById('cards-grid');
+            if(!gridEl) return;
+
+            let html = '';
+            filteredModules.forEach((q, idx) => {
+                let badgeColor = "bg-amber-600/30 text-amber-300 border-amber-500/40";
+                if(q.part === "PART1") badgeColor = "bg-sky-600/30 text-sky-300 border-sky-500/40";
+                if(q.part === "PART2") badgeColor = "bg-emerald-600/30 text-emerald-300 border-emerald-500/40";
+                if(q.part === "PART3") badgeColor = "bg-rose-600/30 text-rose-300 border-rose-500/40";
+
+                html += `
+                    <div onclick="openModule(${idx})" class="slide-card bg-slate-800/90 border border-slate-700/80 rounded-3xl p-7 cursor-pointer flex flex-col justify-between group shadow-xl">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="bg-amber-600 text-white font-extrabold px-3.5 py-1.5 rounded-xl text-base shadow">${q.qNum}</span>
+                                <span class="text-xs md:text-sm font-bold ${badgeColor} px-3 py-1 rounded-full border">${q.area}</span>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold text-white group-hover:text-amber-400 transition-colors leading-snug line-clamp-3">${q.title}</h3>
+                            <p class="text-slate-300 text-sm mt-3 truncate"><strong class="text-amber-300">검증 포인트:</strong> ${q.source}</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-700 flex items-center justify-between text-sm font-bold text-amber-400">
+                            <span>방어 훈련 슬라이드 열기 (클릭)</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                `;
+            });
+            gridEl.innerHTML = html;
+        }
+
+        function openModule(subIdx = 0) {
+            currentSubIndex = subIdx;
+            revealStep = isRevealAllMode ? 4 : 0;
+            renderSlide();
+            const modal = document.getElementById('slide-modal');
+            if(modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModule() {
+            const modal = document.getElementById('slide-modal');
+            if(modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function toggleRevealAll() {
+            isRevealAllMode = !isRevealAllMode;
+            const btn = document.getElementById('reveal-all-btn');
+            const txt = document.getElementById('reveal-all-text');
+            if (isRevealAllMode) {
+                revealStep = 4;
+                if (btn) btn.className = "flex items-center space-x-2 bg-amber-600 text-white border border-amber-400 px-3.5 py-2 rounded-xl text-xs md:text-sm font-bold transition shadow-lg shadow-amber-600/30";
+                if (txt) txt.innerText = "전체 정답 보기 ON";
+            } else {
+                revealStep = 0;
+                if (btn) btn.className = "flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 text-amber-300 border border-amber-700/60 px-3.5 py-2 rounded-xl text-xs md:text-sm font-bold transition";
+                if (txt) txt.innerText = "전체 정답 보기 OFF";
+            }
+            renderSlide();
+        }
+
+        function setRevealStep(step) {
+            revealStep = step;
+            renderSlide();
+        }
+
+        function advanceRevealStep() {
+            const q = filteredModules[currentSubIndex];
+            if (!q) return;
+
+            if (q.isOverview) {
+                if (revealStep < 2) {
+                    revealStep = 2;
+                    renderSlide();
+                } else {
+                    nextSubSlide();
+                }
+                return;
+            }
+
+            const maxStep = q.tailQuestion ? 4 : 2;
+            if (revealStep < maxStep) {
+                revealStep++;
+                renderSlide();
+            } else {
+                nextSubSlide();
+            }
+        }
+
+        function renderSlide() {
+            const q = filteredModules[currentSubIndex];
+            if (!q) return;
+
+            const tagEl = document.getElementById('modal-module-tag');
+            const titleEl = document.getElementById('modal-module-title');
+            if(tagEl) tagEl.innerText = q.qNum;
+            if(titleEl) titleEl.innerText = q.title;
+
+            const currentNumEl = document.getElementById('current-sub-num');
+            const totalNumEl = document.getElementById('total-sub-num');
+            if(currentNumEl) currentNumEl.innerText = currentSubIndex + 1;
+            if(totalNumEl) totalNumEl.innerText = filteredModules.length;
+
+            const areaEl = document.getElementById('modal-content-area');
+            if (!areaEl) return;
+
+            let areaBadgeColor = "bg-amber-600/30 text-amber-300 border-amber-500/40";
+            if(q.part === "PART1") areaBadgeColor = "bg-sky-600/30 text-sky-300 border-sky-500/40";
+            if(q.part === "PART2") areaBadgeColor = "bg-emerald-600/30 text-emerald-300 border-emerald-500/40";
+            if(q.part === "PART3") areaBadgeColor = "bg-rose-600/30 text-rose-300 border-rose-500/40";
+
+            const highlightedScript = formatScriptWithHighlights(q.rawScript, q.highlights);
+            const highlightedTailScript = q.tailScript ? formatScriptWithHighlights(q.tailScript, q.tailHighlights) : '';
+
+            if (q.isOverview) {
+                areaEl.innerHTML = `
+                    <div class="space-y-6 h-full flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+                                <div class="flex items-center space-x-3">
+                                    <span class="bg-amber-500 text-slate-950 text-base md:text-lg font-black px-4 py-1.5 rounded-xl shadow">${q.qNum}</span>
+                                    <span class="text-sm md:text-base font-bold ${areaBadgeColor} px-3.5 py-1 rounded-full border">${q.area}</span>
+                                </div>
+                                <span class="text-sm text-slate-300 bg-slate-800 px-3.5 py-1 rounded-full border border-slate-700 font-semibold">
+                                    모듈 ${currentSubIndex + 1} / ${filteredModules.length}
+                                </span>
+                            </div>
+
+                            <div class="bg-amber-950/30 border border-amber-700/50 p-6 md:p-7 rounded-2xl mt-5 space-y-2">
+                                <span class="text-sm text-amber-300 font-bold uppercase tracking-wider"><i class="fa-solid fa-shield-halved mr-1.5"></i> 사각지대 방어 핵심 지침</span>
+                                <h3 class="text-2xl md:text-3xl font-extrabold text-white leading-snug">${q.title}</h3>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-3">
+                            <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl flex items-center space-x-4 text-base md:text-lg">
+                                <i class="fa-solid fa-bookmark text-amber-300 text-2xl"></i>
+                                <div>
+                                    <strong class="text-slate-400 text-sm block">핵심 포지셔닝:</strong> 
+                                    <span class="text-white font-bold">${q.source}</span>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl flex items-center space-x-4 text-base md:text-lg">
+                                <i class="fa-solid fa-key text-amber-300 text-2xl"></i>
+                                <div>
+                                    <strong class="text-slate-400 text-sm block">핵심 키워드:</strong> 
+                                    <span class="text-white font-bold">${q.keywords}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-950 border border-slate-800 p-6 md:p-8 rounded-3xl space-y-3 shadow-inner">
+                            <div class="flex items-center justify-between text-sm text-amber-400 font-bold uppercase tracking-wider">
+                                <span><i class="fa-solid fa-compass mr-1.5"></i> 실전 방어 컨설팅 요약</span>
+                            </div>
+                            <p class="text-slate-100 text-lg md:text-xl leading-relaxed font-medium">
+                                ${highlightedScript}
+                            </p>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Step 1: Hints
+            let hintSectionHtml = '';
+            if (revealStep >= 1) {
+                hintSectionHtml = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 animate-reveal">
+                        <div class="bg-slate-800/90 border border-slate-700 p-4 md:p-5 rounded-2xl flex items-start space-x-3.5">
+                            <i class="fa-solid fa-bookmark text-amber-300 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-slate-400 text-xs md:text-sm block mb-0.5">출제 의도 / 검증 포인트</strong> 
+                                <span class="text-white font-bold text-base md:text-lg leading-snug">${q.source}</span>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/90 border border-slate-700 p-4 md:p-5 rounded-2xl flex items-start space-x-3.5">
+                            <i class="fa-solid fa-key text-amber-300 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-slate-400 text-xs md:text-sm block mb-0.5">핵심 방어 키워드 (근육 기억)</strong> 
+                                <span class="text-amber-300 font-bold text-base md:text-lg leading-snug">${q.keywords}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                hintSectionHtml = `
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="setRevealStep(1)" class="flex-1 min-w-[240px] bg-slate-800/90 hover:bg-slate-800 border-2 border-dashed border-amber-500/50 hover:border-amber-400 text-amber-300 p-4 rounded-2xl font-bold text-base md:text-lg transition flex items-center justify-center space-x-2.5 shadow-lg">
+                            <i class="fa-solid fa-lightbulb text-xl"></i>
+                            <span>1단계: 검증 의도 & 핵심 키워드 힌트 보기</span>
+                        </button>
+                        <button onclick="setRevealStep(2)" class="flex-1 min-w-[240px] bg-amber-950/70 hover:bg-amber-900/80 border-2 border-dashed border-amber-500/60 hover:border-amber-400 text-amber-200 p-4 rounded-2xl font-bold text-base md:text-lg transition flex items-center justify-center space-x-2.5 shadow-lg">
+                            <i class="fa-solid fa-microphone-lines text-xl"></i>
+                            <span>바로 방어 모범 스크립트 확인</span>
+                        </button>
+                    </div>
+                `;
+            }
+
+            // Step 2: Main Defense Script
+            let mainScriptSectionHtml = '';
+            if (revealStep >= 2) {
+                mainScriptSectionHtml = `
+                    <div class="bg-slate-950 border border-amber-800/70 p-6 md:p-8 rounded-3xl space-y-3 shadow-inner animate-reveal">
+                        <div class="flex flex-wrap items-center justify-between gap-2 text-sm text-amber-400 font-bold uppercase tracking-wider">
+                            <span><i class="fa-solid fa-microphone-lines mr-1.5"></i> 방어형 모범 대응 스크립트 (핵심 키워드 하이라이트 적용)</span>
+                            <span class="bg-amber-900/60 px-3 py-1 rounded-lg text-amber-200 border border-amber-700/50 text-xs md:text-sm">한계 인정 + 성장형 서사</span>
+                        </div>
+                        <p class="text-slate-100 text-lg md:text-xl lg:text-[22px] leading-relaxed font-normal pt-1">
+                            "${highlightedScript}"
+                        </p>
+                    </div>
+                `;
+            } else if (revealStep === 1) {
+                mainScriptSectionHtml = `
+                    <button onclick="setRevealStep(2)" class="w-full bg-amber-950/70 hover:bg-amber-900/80 border-2 border-dashed border-amber-500/60 hover:border-amber-400 text-amber-200 p-5 rounded-2xl font-bold text-base md:text-lg transition flex items-center justify-center space-x-3 shadow-lg animate-reveal">
+                        <i class="fa-solid fa-microphone-lines text-xl text-amber-400"></i>
+                        <span>2단계: 방어형 모범 대응 스크립트 확인 (핵심 키워드 하이라이트)</span>
+                    </button>
+                `;
+            }
+
+            // Step 3 & 4: Tail Question & Tail Answer
+            let tailSectionHtml = '';
+            if (q.tailQuestion && revealStep >= 2) {
+                if (revealStep === 2) {
+                    tailSectionHtml = `
+                        <button onclick="setRevealStep(3)" class="w-full bg-rose-950/60 hover:bg-rose-900/70 border-2 border-dashed border-rose-500/60 hover:border-rose-400 text-rose-200 p-5 rounded-2xl font-bold text-base md:text-lg transition flex items-center justify-center space-x-3 shadow-lg animate-reveal">
+                            <i class="fa-solid fa-shield-halved text-xl text-rose-400"></i>
+                            <span>3단계: 심화 압박 꼬리질문 확인하기 (클릭)</span>
+                        </button>
+                    `;
+                } else if (revealStep >= 3) {
+                    let tailAnswerBlock = '';
+                    if (revealStep === 3) {
+                        tailAnswerBlock = `
+                            <div class="pt-3 border-t border-rose-800/50">
+                                <button onclick="setRevealStep(4)" class="w-full bg-rose-900/60 hover:bg-rose-800/80 border border-dashed border-rose-400/70 text-rose-100 py-3.5 px-5 rounded-xl font-bold text-base transition flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-microphone text-rose-300"></i>
+                                    <span>4단계: 꼬리질문 핵심 대응 방향 및 모범 답변 스크립트 보기</span>
+                                </button>
+                            </div>
+                        `;
+                    } else if (revealStep >= 4) {
+                        tailAnswerBlock = `
+                            <div class="pt-4 border-t border-rose-800/60 space-y-3 animate-reveal">
+                                <p class="text-sm md:text-base text-amber-200 bg-rose-950/80 p-3.5 rounded-xl border border-rose-800/60 leading-relaxed">
+                                    <strong class="text-amber-300"><i class="fa-solid fa-compass mr-1"></i> 핵심 대응 방향:</strong> ${q.tailGuidance}
+                                </p>
+                                ${q.tailScript ? `
+                                <div class="bg-slate-950/90 p-5 rounded-2xl border border-rose-700/50">
+                                    <strong class="text-sm text-rose-300 block mb-2"><i class="fa-solid fa-microphone mr-1.5"></i> 꼬리질문 모범 답변 스크립트:</strong>
+                                    <p class="text-base md:text-lg lg:text-xl text-white leading-relaxed">"${highlightedTailScript}"</p>
+                                </div>
+                                ` : ''}
+                            </div>
+                        `;
+                    }
+
+                    tailSectionHtml = `
+                        <div class="bg-rose-950/40 border border-rose-700/70 p-6 md:p-7 rounded-3xl space-y-3 animate-reveal">
+                            <span class="text-sm text-rose-300 font-bold uppercase tracking-wider block"><i class="fa-solid fa-shield-halved mr-1.5"></i> 심화 검증형 예상 꼬리질문</span>
+                            <p class="text-lg md:text-xl font-bold text-white leading-snug">"${q.tailQuestion}"</p>
+                            ${tailAnswerBlock}
+                        </div>
+                    `;
+                }
+            }
+
+            const totalSteps = q.tailQuestion ? 4 : 2;
+            const stepLabel = revealStep === 0 ? "질문 방어 사고 단계" : `${Math.min(revealStep, totalSteps)} / ${totalSteps} 단계 공개됨`;
+
+            areaEl.innerHTML = `
+                <div class="space-y-5 h-full flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-amber-600 text-white text-base md:text-lg font-black px-4 py-1.5 rounded-xl shadow">${q.qNum}</span>
+                                <span class="text-sm md:text-base font-bold ${areaBadgeColor} px-3.5 py-1 rounded-full border">${q.area}</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xs md:text-sm text-amber-300 bg-amber-950/60 px-3 py-1 rounded-full border border-amber-700/50 font-bold">
+                                    ${stepLabel}
+                                </span>
+                                <span class="text-xs md:text-sm text-slate-300 bg-slate-800 px-3 py-1 rounded-full border border-slate-700 font-semibold">
+                                    문항 ${currentSubIndex + 1} / ${filteredModules.length}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Main Question Box -->
+                        <div class="bg-gradient-to-br from-amber-950/60 to-slate-900 border border-amber-700/70 p-6 md:p-8 rounded-3xl space-y-2.5 shadow-lg">
+                            <span class="text-sm text-amber-300 font-bold uppercase tracking-wider flex items-center">
+                                <i class="fa-solid fa-circle-question mr-2 text-base"></i> 면접관 지엽·기습 질문 (0.5초 호흡 후 방어 논리를 구상해 보세요)
+                            </span>
+                            <h3 class="text-xl md:text-2xl lg:text-[26px] font-extrabold text-white leading-snug tracking-tight">
+                                "${q.title}"
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 my-auto pt-2">
+                        ${hintSectionHtml}
+                        ${mainScriptSectionHtml}
+                        ${tailSectionHtml}
+                    </div>
+                </div>
+            `;
+
+            const scrollContainer = document.getElementById('modal-scroll-container');
+            if(scrollContainer && revealStep === 0) scrollContainer.scrollTop = 0;
+        }
+
+        function nextSubSlide() {
+            if (currentSubIndex < filteredModules.length - 1) {
+                currentSubIndex++;
+            } else {
+                currentSubIndex = 0;
+            }
+            revealStep = isRevealAllMode ? 4 : 0;
+            renderSlide();
+        }
+
+        function prevSubSlide() {
+            if (currentSubIndex > 0) {
+                currentSubIndex--;
+            } else {
+                currentSubIndex = filteredModules.length - 1;
+            }
+            revealStep = isRevealAllMode ? 4 : 0;
+            renderSlide();
+        }
+
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('slide-modal');
+            if (modal && !modal.classList.contains('hidden')) {
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    nextSubSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevSubSlide();
+                } else if (e.key === ' ' || e.code === 'Space') {
+                    e.preventDefault();
+                    advanceRevealStep();
+                } else if (e.key === 'Escape') {
+                    closeModule();
+                }
+            }
+        });
+
+        window.onload = function() {
+            renderCardsGrid();
+        };
+    </script>
+</body>
+</html>
